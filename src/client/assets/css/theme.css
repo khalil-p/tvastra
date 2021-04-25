@@ -1,0 +1,97 @@
+/* css variable */
+
+:root {
+    --main-backgroung: #add8e6;
+    
+}
+
+/* face fonts */
+
+@font-face {
+    font-family: nexa-bold;
+    src: url(/tvastra/src/client/assets/fonts/Nexa-Bold.otf) format('otf');
+}
+
+@font-face {
+    font-family: nexa-light;
+    src: url(/tvastra/src/client/assets/fonts/Nexa-Light.otf) format('otf');
+}
+
+/* html elements */
+
+img {
+    display: block;
+}
+
+body {
+    background-color: var(--main-backgroung);
+
+}
+
+section {
+
+}
+
+h1,h2,h3,h4 {
+    font-family: 'nexa-bold';
+
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+
+}
+
+h4 {
+    font-size: 1.1rem;
+
+}
+
+p {
+    font-family: 'nexa-light';
+    font-size: 1.2rem;
+}
+
+li {
+    font-family: 'nexa-light';
+}
+
+footer{
+
+}
+
+/* media querry */
+
+/* .....mobile phone.... */
+@media (max-width: 768px){
+   
+    
+}
+
+@media (max-width: 468px) {
+    
+}
+
+/* ......tablet..... */
+@media (min-width:768px) and (max-width:1023px){
+    
+}
+
+/* ....Desktop...... */
+@media  (min-width: 1024px){
+    
+}
+
+
+
+
+
+
