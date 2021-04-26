@@ -1,11 +1,13 @@
-/* css variable */
+/* CSS VARIABLE */
 
 :root {
-    --main-backgroung: #add8e6;
+    --main-background: #add8e6;
+    --footer: #021433;
     
 }
 
-/* face fonts */
+
+/* FACE FONTS */
 
 @font-face {
     font-family: nexa-bold;
@@ -17,56 +19,157 @@
     src: url(/tvastra/src/client/assets/fonts/Nexa-Light.otf) format('otf');
 }
 
-/* html elements */
+
+/* HTML ELEMENTS */
+
+html,body {
+    background-color: var(--main-background);
+    box-sizing: border-box;
+
+}
+
+/* NAV BAR START */
+nav {
+    background-color: #fff;
+    display: inline-block; /* will change in media query */
+}
+
+nav ul li {
+    list-style-type: none;
+    display: flex; /* itmes will become horizontal */ 
+}
+
+nav ul li a { /* navbar anchor items */
+    text-decoration: none;
+    color: #575b56;
+}
+
+.logo-img { /* create .logo-img class in index.html */
+    float: left;
+    position: relative;
+    /* margin to be defined */
+}
+/* NAV BAR END */
+
+
+
+/* INPUT BOX START */
+
+input { /* search input box */
+    display: block;
+    font-size: 2rem;
+    font-family: "nexa-light";
+}
+
+.checkbox { /*create the class .checkbox in index.html*/
+    display: block;
+    font-size: 1rem;
+}
+/* INPUT BOX END */
+
+
+/* BUTTONS START */
+button { 
+    display: block;
+    font-family: "nexa-light";
+    height: 4rem;
+  }
+
+.searchButton { /* search button, make .searchButton class in index.html*/
+    background-color: #151e3b;
+    border: none;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.consultationButton{
+    /* consultation buttons */
+    /* will be designed style.css */
+}
+
+/* BUTTONS END */
+
+
 
 img {
     display: block;
 }
 
-body {
-    background-color: var(--main-backgroung);
-
+a {
+    text-decoration: none;
 }
 
 section {
+    padding: 1rem;
+}
 
+hr {
+    display: block;
+    margin: 0;
 }
 
 h1,h2,h3,h4 {
     font-family: 'nexa-bold';
-
 }
 
 h1 {
     font-size: 2rem;
+    line-height: 2.3rem;
 }
 
 h2 {
     font-size: 1.5rem;
+    line-height: 1.8rem;
 }
 
 h3 {
     font-size: 1.2rem;
-
+    line-height: 1.5rem;
 }
 
 h4 {
     font-size: 1.1rem;
+    line-height: 1.4rem;
+}
 
+h5 {
+    font-size: 1rem;
+    line-height: 1.3rem; 
+}
+
+h6 {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
 }
 
 p {
     font-family: 'nexa-light';
     font-size: 1.2rem;
+    line-height: 1.5rem;
 }
 
 li {
     font-family: 'nexa-light';
 }
 
-footer{
+span {
 
 }
+
+table {
+    border-collapse: collapse;
+}
+
+
+footer{
+    background-color: var(--footer);
+    font-family: "nexa-light";
+
+}
+
 
 /* media querry */
 
@@ -82,12 +185,31 @@ footer{
 
 /* ......tablet..... */
 @media (min-width:768px) and (max-width:1023px){
+    input { /* search input box */
+        display: inline-block;
+    }
+    button { /* search button */
+        display: inline-block;
+      }
+    footer{
+        background-color: #fff;
+    }
+
     
 }
 
 /* ....Desktop...... */
 @media  (min-width: 1024px){
-    
+    input { /* search input box */
+        display: inline-block;
+    }
+    button { /* search button */
+        display: inline-block;
+      }
+    footer{
+        background-color: #fff;
+    }
+
 }
 
 
