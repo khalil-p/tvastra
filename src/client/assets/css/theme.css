@@ -155,10 +155,6 @@ li {
     font-family: 'nexa-light';
 }
 
-span {
-
-}
-
 table {
     border-collapse: collapse;
 }
@@ -176,7 +172,7 @@ footer{
 /* .....mobile phone.... */
 @media (max-width: 768px){
    
-    
+    /* this will be adjusted while making the page beacuse pages are styled for mobile view initially  */
 }
 
 @media (max-width: 468px) {
