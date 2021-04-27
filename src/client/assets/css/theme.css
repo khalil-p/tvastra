@@ -1,215 +1,317 @@
+/*  - CONSIDERING RESET.CSS
+    - do not define any particular class in theme.css;
+    - float is obsolete;
+    - do not adjust display property in theme.css, example no flex, grid anyting in theme.css;
+    - no positions to be defined in theme.css;
+    - all colors to be defined in :root
+*/
+
 /* CSS VARIABLE */
 
 :root {
-    --main-background: #add8e6;
-    --footer: #021433;
-    
+  --main-background: #add8e6;
+  --footer: #021433;
+  --white: #fff;
+  --black: #000;
+  --burgerButton: #525659;
+  --headings: #16203c;
+  --searchButton: #151f3b;
+  --consultButon: #d3d3d4;
+  --servicesBackground: #f3f3f3;
+  --enquiryButton: #0099ff;
+  --coloredSection: #07072d;
 }
-
 
 /* FACE FONTS */
 
 @font-face {
-    font-family: nexa-bold;
-    src: url(/tvastra/src/client/assets/fonts/Nexa-Bold.otf) format('otf');
+  font-family: nexa-bold;
+  src: url(/tvastra/src/client/assets/fonts/Nexa-Bold.otf);
 }
 
 @font-face {
-    font-family: nexa-light;
-    src: url(/tvastra/src/client/assets/fonts/Nexa-Light.otf) format('otf');
+  font-family: nexa-light;
+  src: url(/tvastra/src/client/assets/fonts/Nexa-Light.otf);
 }
-
 
 /* HTML ELEMENTS */
 
-html,body {
-    background-color: var(--main-background);
-    box-sizing: border-box;
-
+html,
+body {
+  box-sizing: border-box;
 }
 
-/* NAV BAR START */
+* {
+  letter-spacing: 0.1rem;
+}
+
 nav {
-    background-color: #fff;
-    display: inline-block; /* will change in media query */
+  padding: 2rem 1rem 0 1rem;
+  background-color: var(--white);
 }
 
-nav ul li {
-    list-style-type: none;
-    display: flex; /* itmes will become horizontal */ 
+ul {
+  list-style: none; /*no padding rrequired as padding is given to nav*/
 }
 
-nav ul li a { /* navbar anchor items */
-    text-decoration: none;
-    color: #575b56;
+/* li for both ul and ol */
+li {
+  font-family: "nexa-light";
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: var(--burgerButton);
+  /* padding: 0.2rem; */
 }
 
-.logo-img { /* create .logo-img class in index.html */
-    float: left;
-    position: relative;
-    /* margin to be defined */
-}
-/* NAV BAR END */
-
-
-
-/* INPUT BOX START */
-
-input { /* search input box */
-    display: block;
-    font-size: 2rem;
-    font-family: "nexa-light";
-}
-
-.checkbox { /*create the class .checkbox in index.html*/
-    display: block;
-    font-size: 1rem;
-}
-/* INPUT BOX END */
-
-
-/* BUTTONS START */
-button { 
-    display: block;
-    font-family: "nexa-light";
-    height: 4rem;
-  }
-
-.searchButton { /* search button, make .searchButton class in index.html*/
-    background-color: #151e3b;
-    border: none;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    color: white;
-}
-
-.consultationButton{
-    /* consultation buttons */
-    /* will be designed style.css */
-}
-
-/* BUTTONS END */
-
-
-
-img {
-    display: block;
+label,select {
+  font-family: "nexa-light";
+  font-size: 1rem;
+  color: var(--black);
 }
 
 a {
-    text-decoration: none;
-}
-
-section {
-    padding: 1rem;
-}
-
-hr {
-    display: block;
-    margin: 0;
-}
-
-h1,h2,h3,h4 {
-    font-family: 'nexa-bold';
-}
-
-h1 {
-    font-size: 2rem;
-    line-height: 2.3rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-}
-
-h3 {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-}
-
-h4 {
-    font-size: 1.1rem;
-    line-height: 1.4rem;
-}
-
-h5 {
-    font-size: 1rem;
-    line-height: 1.3rem; 
-}
-
-h6 {
-    font-size: 0.8rem;
-    line-height: 1.1rem;
+  text-decoration: none;
+  color: var(--white);
+  font-family: "nexa light";
+  font-size: 2rem;
 }
 
 p {
-    font-family: 'nexa-light';
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+  font-family: "nexa-light";
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
-li {
-    font-family: 'nexa-light';
+section {
+  padding: 2rem 1rem;
 }
 
-table {
-    border-collapse: collapse;
+/*input element is by default inline */
+input {
+  font-size: 2rem;
+  font-family: "nexa-light";
+  padding: 1rem;
+}
+
+/*padding is also given to section*/
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 
-footer{
-    background-color: var(--footer);
-    font-family: "nexa-light";
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "nexa-bold";
 }
 
-
-/* media querry */
-
-/* .....mobile phone.... */
-@media (max-width: 768px){
-   
-    /* this will be adjusted while making the page beacuse pages are styled for mobile view initially  */
+h2,
+h3,
+h4,
+h6 {
+  color: var(--headings);
 }
 
-@media (max-width: 468px) {
-    
+h1 {
+  font-size: 4.5rem;
+  line-height: 4.7rem;
+  color: var(--white);
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 4.2rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 3.2rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+}
+
+h5 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: var(--white);
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+/*button tag is by default inline */
+button {
+  background-color: var(--searchButton);
+  font-family: "nexa-light";
+  font-size: 2rem;
+  color: var(--white);
+  border: 1px solid black;
+  padding: 1rem 4rem;
+}
+
+.enquiryButton {
+  background-color: var(--enquiryButton);
+  border-radius: 1rem;
+}
+
+.consultButton {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 2rem 6rem 2rem 2rem;
+  color: var(--consultButon);
+}
+
+.servicesButton {
+  /* background: url(./Icons-01.png); */
+  background-size: 15rem;
+  border: 1px solid var(--servicesBackground);
+  padding: 7rem 10rem;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+  background-position: center;
+}
+
+/*footer me common bas itna he hai*/
+footer {
+  background-color: var(--footer);
+  padding: 2rem 10rem;
 }
 
 /* ......tablet..... */
-@media (min-width:768px) and (max-width:1023px){
-    input { /* search input box */
-        display: inline-block;
-    }
-    button { /* search button */
-        display: inline-block;
-      }
-    footer{
-        background-color: #fff;
-    }
 
-    
+@media (min-width: 769px) and (max-width: 1024px) {
+  section {
+    padding: 3rem 4rem;
+  }
+
+  footer {
+    background-color: var(--white);
+    padding: 2rem; /*all four sides same padding*/
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+  h5 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  h6 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  /* grid view will me modified in main style.css file. As said by mentor no display and position will be modified in theme.css */
 }
 
 /* ....Desktop...... */
-@media  (min-width: 1024px){
-    input { /* search input box */
-        display: inline-block;
-    }
-    button { /* search button */
-        display: inline-block;
-      }
-    footer{
-        background-color: #fff;
-    }
+@media (min-width: 1024px) {
+  /* all display and position properties will be defined in normal style.css file */
+  * {
+    letter-spacing: 0.05rem;
+  }
 
+  section {
+    padding: 3rem 4rem;
+  }
+
+  footer {
+    background-color: var(--white);
+    padding: 2rem 3rem; /*all four sides same padding*/
+  }
+
+  li {
+    font-size: 0.8rem;
+    font-family: "nexa-bold";
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+
+  label,select {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .consultButton {
+    border-radius: 0.5rem;
+  }
+
+  .loginButton {
+    background-color: var(--white);
+    font-size: 1rem;
+    color: var(--searchButtom);
+    padding: 0.5rem 3rem;
+  }
+
+  .getQuoteButton {
+    font-size: 1rem;
+    padding: 0.5rem 3rem;
+  }
+
+  .servicesButton {
+    border-radius: 0;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    line-height: 3.1rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 2.1rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+  h5 {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
 }
-
-
-
-
-
-
