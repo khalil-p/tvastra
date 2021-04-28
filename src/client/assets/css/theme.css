@@ -6,20 +6,26 @@
     - all colors to be defined in :root
 */
 
+
+/* changes to be made */
+/* font-size should not be greater then 3rem; */
+
+
 /* CSS VARIABLE */
 
 :root {
-  --main-background: #add8e6;
-  --footer: #021433;
+  --main-backgroundColor: #add8e6;
+  --footerColor: #021433;
   --white: #fff;
   --black: #000;
-  --burgerButton: #525659;
-  --headings: #16203c;
-  --searchButton: #151f3b;
-  --consultButon: #d3d3d4;
-  --servicesBackground: #f3f3f3;
-  --enquiryButton: #0099ff;
-  --coloredSection: #07072d;
+  --anchorColor: #00008b;
+  --burgerButtonColor: #525659;
+  --headingsColor: #16203c;
+  --searchButtonColor: #151f3b;
+  --consultButonColor: #d3d3d4;
+  --servicesBackgroundColor: #f3f3f3;
+  --enquiryButtonColor: #0099ff;
+  --coloredSectionColor: #07072d;
 }
 
 /* FACE FONTS */
@@ -36,17 +42,14 @@
 
 /* HTML ELEMENTS */
 
-html,
-body {
+
+* {
   box-sizing: border-box;
 }
 
-* {
-  letter-spacing: 0.1rem;
-}
-
 nav {
-  padding: 2rem 1rem 0 1rem;
+  padding: 1rem 2rem; 
+  /*padding should be same on both the sides*/
   background-color: var(--white);
 }
 
@@ -54,16 +57,23 @@ ul {
   list-style: none; /*no padding rrequired as padding is given to nav*/
 }
 
+/* ol does not require list style to change */
 /* li for both ul and ol */
 li {
   font-family: "nexa-light";
   font-size: 1rem;
   line-height: 1.2rem;
-  color: var(--burgerButton);
-  /* padding: 0.2rem; */
+  color: var(--burgerButtonColor);
 }
 
-label,select {
+/* seperate the lable and select tag */
+label{
+  font-family: "nexa-light";
+  font-size: 1rem;
+  color: var(--black);
+}
+
+select {
   font-family: "nexa-light";
   font-size: 1rem;
   color: var(--black);
@@ -71,7 +81,7 @@ label,select {
 
 a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--anchorColor);
   font-family: "nexa light";
   font-size: 2rem;
 }
@@ -83,23 +93,25 @@ p {
 }
 
 section {
-  padding: 2rem 1rem;
+  padding: 1rem 2rem;
 }
 
 /*input element is by default inline */
 input {
   font-size: 2rem;
   font-family: "nexa-light";
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 /*padding is also given to section*/
 img {
   width: 100%;
-  height: auto;
+  height: 100vh;
   object-fit: cover;
 }
 
+/* h1 sirf ek jagah use hoga vo bhi upar */
+/* h1 aur h2 ko ek he  size dena hai */
 
 h1,
 h2,
@@ -108,40 +120,34 @@ h4,
 h5,
 h6 {
   font-family: "nexa-bold";
+  color: var(--headingsColor);
 }
 
-h2,
-h3,
-h4,
-h6 {
-  color: var(--headings);
-}
+/* sab k sab headings ko ek he color dena hai */
 
 h1 {
-  font-size: 4.5rem;
-  line-height: 4.7rem;
-  color: var(--white);
+  font-size: 3.5rem;
+  line-height: 4.2rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 4.2rem;
 }
 
 h3 {
   font-size: 3rem;
-  line-height: 3.2rem;
+  line-height: 3.6rem;
 }
 
 h4 {
   font-size: 2.5rem;
-  line-height: 2.7rem;
+  line-height: 3rem;
 }
 
 h5 {
   font-size: 2rem;
   line-height: 2.2rem;
-  color: var(--white);
 }
 
 h6 {
@@ -151,47 +157,46 @@ h6 {
 
 /*button tag is by default inline */
 button {
-  background-color: var(--searchButton);
+  background-color: var(--searchButtonColor);
   font-family: "nexa-light";
   font-size: 2rem;
   color: var(--white);
-  border: 1px solid black;
-  padding: 1rem 4rem;
+  border: 1px solid var(--searchButtonColor);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
 }
 
 .enquiryButton {
-  background-color: var(--enquiryButton);
+  background-color: var(--enquiryButtonColor);
   border-radius: 1rem;
 }
 
 .consultButton {
   background-color: var(--white);
-  border-radius: 1rem;
-  padding: 2rem 6rem 2rem 2rem;
-  color: var(--consultButon);
+  color: var(--consultButonColor);
 }
 
-.servicesButton {
-  /* background: url(./Icons-01.png); */
-  background-size: 15rem;
-  border: 1px solid var(--servicesBackground);
-  padding: 7rem 10rem;
-  background-repeat: no-repeat;
-  border-radius: 2rem;
-  background-position: center;
-}
 
 /*footer me common bas itna he hai*/
 footer {
-  background-color: var(--footer);
-  padding: 2rem 10rem;
+  background-color: var(--footerColor);
+  padding: 2rem 4rem;
 }
 
 /* ......tablet..... */
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    padding: 2rem 3rem;     
+  }
+
   section {
-    padding: 3rem 4rem;
+    padding: 3rem 2rem;
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 1rem 3rem;
   }
 
   footer {
@@ -206,6 +211,19 @@ footer {
 
   a {
     font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 1rem;
+    font-family: "nexa-bold";
+  }
+
+  select {
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 0.8rem;
   }
 
   h1 {
@@ -239,17 +257,22 @@ footer {
 /* ....Desktop...... */
 @media (min-width: 1024px) {
   /* all display and position properties will be defined in normal style.css file */
-  * {
-    letter-spacing: 0.05rem;
+  nav {
+    padding: 2rem 3rem;     
   }
-
+  
   section {
-    padding: 3rem 4rem;
+    padding: 4rem 3rem;
   }
 
   footer {
     background-color: var(--white);
     padding: 2rem 3rem; /*all four sides same padding*/
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 1rem 3rem; 
   }
 
   li {
@@ -259,59 +282,39 @@ footer {
 
   p {
     font-size: 0.8rem;
-    line-height: 1rem;
+    line-height: 1.2rem;
   }
 
   a {
     font-size: 1.5rem;
   }
 
-  label,select {
+  select {
     font-size: 0.8rem;
   }
 
-  button {
-    font-size: 1rem;
-  }
-
-  .consultButton {
-    border-radius: 0.5rem;
-  }
-
-  .loginButton {
-    background-color: var(--white);
-    font-size: 1rem;
-    color: var(--searchButtom);
-    padding: 0.5rem 3rem;
-  }
-
-  .getQuoteButton {
-    font-size: 1rem;
-    padding: 0.5rem 3rem;
-  }
-
-  .servicesButton {
-    border-radius: 0;
+  label {
+    font-size: 0.8rem;
   }
   
   h1 {
-    font-size: 3rem;
-    line-height: 3.1rem;
+    font-size: 2.5rem;
+    /* line-height: 3.1rem; */
   }
   h2 {
     font-size: 2.5rem;
-    line-height: 2.6rem;
+    /* line-height: 2.6rem; */
   }
   h3 {
     font-size: 2rem;
-    line-height: 2.1rem;
+    /* line-height: 2.1rem; */
   }
   h4 {
     font-size: 1.5rem;
-    line-height: 1.6rem;
+    /* line-height: 1.6rem; */
   }
   h5 {
     font-size: 1rem;
-    line-height: 1.1rem;
+    /* line-height: 1.1rem; */
   }
 }
