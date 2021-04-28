@@ -26,6 +26,8 @@
   --servicesBackgroundColor: #f3f3f3;
   --enquiryButtonColor: #0099ff;
   --coloredSectionColor: #07072d;
+  --borderColor: #0000ff;
+  --textColor: #00008b;
 }
 
 /* FACE FONTS */
@@ -49,8 +51,8 @@
 
 nav {
   padding: 1rem 2rem; 
-  /*padding should be same on both the sides*/
-  background-color: var(--white);
+  /* padding should be same on both the sides
+  background-color: var(--white); */
 }
 
 ul {
@@ -70,13 +72,13 @@ li {
 label{
   font-family: "nexa-light";
   font-size: 1rem;
-  color: var(--black);
+  color: var(--textColor);
 }
 
 select {
   font-family: "nexa-light";
   font-size: 1rem;
-  color: var(--black);
+  color: var(--textColor);
 }
 
 a {
@@ -90,6 +92,7 @@ p {
   font-family: "nexa-light";
   font-size: 2rem;
   line-height: 2.5rem;
+  color: var(--textColor);
 }
 
 section {
@@ -101,12 +104,35 @@ input {
   font-size: 2rem;
   font-family: "nexa-light";
   padding: 1rem 1.5rem;
+  width: 100%;
+  color: var(--textColor);
+  border: 1px solid var(--enquiryButtonColor);
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+}
+
+.radio {
+  width: 1rem;
+  height: 1rem;
+}
+
+textarea {
+  font-family: "nexa-light";
+  font-size: 2rem;
+  line-height: 2.5rem;
+  border: 1px solid var(--textColor);
+  color: var(--textColor);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 /*padding is also given to section*/
 img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -163,7 +189,9 @@ button {
   color: var(--white);
   border: 1px solid var(--searchButtonColor);
   border-radius: 1rem;
+  border-color: var(--searchButtonColor);
   padding: 1rem 2rem;
+  cursor: pointer;  
 }
 
 .enquiryButton {
@@ -175,7 +203,6 @@ button {
   background-color: var(--white);
   color: var(--consultButonColor);
 }
-
 
 /*footer me common bas itna he hai*/
 footer {
@@ -197,6 +224,12 @@ footer {
   button {
     font-size: 1rem;
     padding: 1rem 3rem;
+  }
+
+  textarea {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 1rem 2rem;
   }
 
   footer {
@@ -273,6 +306,11 @@ footer {
   button {
     font-size: 1rem;
     padding: 1rem 3rem; 
+  }
+
+  textarea {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
   }
 
   li {
