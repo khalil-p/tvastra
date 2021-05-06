@@ -1,0 +1,312 @@
+/* section-1 start */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 25%;
+}
+/* section-1 end */
+
+/* section-2 start */
+.section-2 {
+  background-color: var(--main-backgroundColor);
+  text-align: center;
+}
+
+.search-button {
+  border-radius: 0;
+  margin: 1.5rem;
+}
+
+.section-2 p {
+  padding-bottom: 2rem;
+}
+
+.search-section input {
+  margin: 0.4rem;
+}
+
+.i-1 {
+  position: absolute;
+  top: 39rem;
+  left: 3rem;
+}
+
+.search-section img {
+  width: 2rem;
+}
+
+.location {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-image: url(../images/gps.png);
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: 41rem 2rem;
+}
+/* section-2 end*/
+
+/* section-3 start */
+
+.section-3 {
+  text-align: center;
+}
+
+.section-3 h2 {
+  text-shadow: 1px 1px 2px var(--headingsColor);
+  padding-bottom: 2rem;
+}
+
+.section-3 p {
+  padding: 0 1rem;
+}
+
+.section-3 ol {
+  padding: 2rem;
+}
+
+.section-3 ol li {
+  margin: 2rem 0;
+  padding: 2rem;
+  border: 1px solid var(--borderColor);
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-family: "nexa-bold";
+  line-height: 2.5rem;
+  text-align: left;
+}
+
+.section-3 ol li h3 {
+  opacity: 0.3;
+}
+
+.section-3 .fix-consultation {
+  opacity: 1;
+}
+
+.section-3 h4 {
+  padding: 1rem;
+}
+
+.section-3 img {
+  padding: 1rem 0;
+  align-items: center;
+}
+
+/* section-3 Task-04 End */
+
+/* section-4 Task-05 Start*/
+
+.section-4 {
+  background-color: var(--coloredSectionColor);
+  text-align: center;
+}
+
+.section-4 h2 {
+  text-shadow: 1px 1px 2px var(--white);
+  color: var(--white);
+  padding-bottom: 2rem;
+}
+
+.section-4 p {
+  color: var(--white);
+  padding: 0 1rem;
+}
+
+.doctor {
+  background-color: var(--white);
+  margin: 2rem 0;
+}
+
+hr {
+  border-width: 1.5px;
+  width: 3.5rem;
+  position: absolute;
+  align-self: left;
+  border-color: var(--doctorNameColor);
+}
+
+.doctor-img {
+  padding-bottom: 2rem;
+}
+
+.doctor-info {
+  padding: 0 4rem;
+  text-align: left;
+}
+
+.doctor-info ol li {
+  font-family: "nexa-bold";
+  font-size: 2rem;
+  color: var(--doctorNameColor);
+  position: relative;
+  bottom: 0.5rem;
+}
+
+.doctor-info ul {
+  padding: 1rem 0;
+}
+
+.bottom-line {
+  height: 0.5rem;
+  width: 100%;
+  background-color: var(--main-backgroundColor);
+}
+
+/* section-4 Task-05 End*/
+
+/* section-5 Task-06 Start */
+.section-5 {
+  text-align: center;
+}
+
+.section-5 h2 {
+  text-shadow: 1px 1px 2px var(--headingsColor);
+  padding-bottom: 2rem;
+}
+
+.section-5 p {
+  padding: 0 1rem;
+}
+
+.medical-treatment {
+  width: 100%;
+  height: 50rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.medical-treatment::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  /* bottom: 100%; */
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 0, 5, 0.01724439775910369) 0%,
+    rgba(18, 10, 18, 0.3981967787114846) 64%,
+    rgba(0, 0, 0, 0.8239670868347339) 94%
+  );
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px;
+  z-index: 10;
+  padding: 2rem;
+  text-align: left;
+}
+
+.overlay-text h4 {
+  color: var(--white);
+}
+
+.overlay-text span {
+  color: var(--white);
+}
+
+/* Section-5 Task-6 End */
+
+/* section-6 task-07 start */
+
+.section-6 {
+  background-color: var(--section6BackgroundColor);
+  text-align: center;
+}
+
+.section-6 h2 {
+  text-shadow: 1px 1px 2px var(--headingsColor);
+  padding-bottom: 2rem;
+}
+
+.section-6 p {
+  padding: 0 1rem;
+}
+
+.service-img img {
+  width: 70%;
+}
+
+.service-img h5 {
+  letter-spacing: 0.2;
+}
+
+.service-img {
+  width: 45%;
+  height: 30%;
+  margin: 1.5rem 0;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: var(--white);
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* section-6 task-07 end */
+
+/* section-7 task-08 start */
+
+.section-7 {
+  background-color: var(--main-backgroundColor);
+  text-align: center;
+}
+
+.section-7 h2 {
+  color: var(--white);
+  padding-bottom: 2rem;
+}
+
+.section-7 p {
+  padding: 0 1rem;
+}
+
+.enquiryButton {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+/* section-7 task-08 end */
+
+/* footer task-09 start */
+footer{
+    text-align: center;
+}
+
+footer img, footer p, footer ul li {
+    padding: 1rem;
+}
+
+footer img{
+    width: 45%; 
+}
+
+footer i, footer a, footer p{
+    color: var(--white);
+}
+
+footer i, footer a {
+    font-family:'Mulish', sans-serif;
+    font-size: 1.8rem;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+
+footer i {
+    padding: 1rem 2rem;
+}
+

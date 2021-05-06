@@ -26,8 +26,10 @@
   --servicesBackgroundColor: #f3f3f3;
   --enquiryButtonColor: #0099ff;
   --coloredSectionColor: #07072d;
-  --borderColor: #0000ff;
-  --textColor: #00008b;
+  --borderColor:  #16203c;
+  --textColor: #151f3b;
+  --doctorNameColor: #0099ff;
+  --section6BackgroundColor:#e9e9f1;
 }
 
 /* FACE FONTS */
@@ -46,25 +48,30 @@
 
 
 * {
+  letter-spacing: 0.1rem;
   box-sizing: border-box;
 }
 
 nav {
-  padding: 1rem 2rem; 
-  /* padding should be same on both the sides
-  background-color: var(--white); */
+  padding: 1rem 1rem; 
+  height: 100%; 
+  /* height added afterwords */
 }
 
 ul {
   list-style: none; /*no padding rrequired as padding is given to nav*/
 }
 
+ul li {
+  padding:0.2rem 0;
+}
+
 /* ol does not require list style to change */
 /* li for both ul and ol */
 li {
   font-family: "nexa-light";
-  font-size: 1rem;
-  line-height: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   color: var(--burgerButtonColor);
 }
 
@@ -91,22 +98,33 @@ a {
 p {
   font-family: "nexa-light";
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
+  color: var(--textColor);
+}
+
+span {
+  font-family: "nexa-light";
+  font-size: 2rem;
+  line-height: 3rem;
   color: var(--textColor);
 }
 
 section {
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
 }
 
 /*input element is by default inline */
 input {
   font-size: 2rem;
   font-family: "nexa-light";
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   width: 100%;
   color: var(--textColor);
   border: 1px solid var(--enquiryButtonColor);
+}
+
+::placeholder {
+  font-size: 1.5rem;
 }
 
 .checkbox {
@@ -152,27 +170,29 @@ h6 {
 /* sab k sab headings ko ek he color dena hai */
 
 h1 {
-  font-size: 3.5rem;
-  line-height: 4.2rem;
+  font-size: 3.3rem;
+  line-height: 4rem;
+  padding: 2rem;
+  text-shadow: 1px 1px 2px var(--headingsColor)
 }
 
 h2 {
-  font-size: 3.5rem;
-  line-height: 4.2rem;
+  font-size: 3rem;
+  line-height: 4.1rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 3.6rem;
 }
 
 h4 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   line-height: 3rem;
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 2.2rem;
 }
 
@@ -184,13 +204,13 @@ h6 {
 /*button tag is by default inline */
 button {
   background-color: var(--searchButtonColor);
-  font-family: "nexa-light";
-  font-size: 2rem;
+  /* font-family: "nexa-light"; */
+  font-size: 1.8rem;
   color: var(--white);
   border: 1px solid var(--searchButtonColor);
   border-radius: 1rem;
   border-color: var(--searchButtonColor);
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   cursor: pointer;  
 }
 
