@@ -650,7 +650,7 @@ footer i {
 
 /* For Desktop  */
 
-@media (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
     * {
         letter-spacing: normal;
     }
@@ -680,8 +680,11 @@ footer i {
         color: var(--textColor);
     }
     .i-1 {
-        top: 20.5rem;
+        top: 20.7rem;
         left: 5.7rem;
+    }
+    .search-section-location .fa-2x {
+        font-size: 1rem;
     }
     .location {
         padding-left: 2rem;

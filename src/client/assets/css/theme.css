@@ -39,12 +39,12 @@
 
 @font-face {
     font-family: nexa-bold;
-    src: url(/tvastra/src/client/assets/fonts/Nexa-Bold.otf);
+    src: url(../fonts/Nexa-Bold.otf);
 }
 
 @font-face {
     font-family: nexa-light;
-    src: url(/tvastra/src/client/assets/fonts/Nexa-Light.otf);
+    src: url(../fonts/Nexa-Light.otf);
 }
 
 
@@ -182,6 +182,7 @@ h5,
 h6 {
     font-family: "nexa-bold";
     color: var(--headingsColor);
+    font: bold;
 }
 
 
