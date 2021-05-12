@@ -50,6 +50,10 @@
 
 /* HTML ELEMENTS */
 
+html {
+    overflow-y: overlay;
+}
+
 * {
     letter-spacing: 0.1rem;
     box-sizing: border-box;
