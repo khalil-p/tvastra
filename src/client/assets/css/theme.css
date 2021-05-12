@@ -285,6 +285,12 @@ footer p {
     }
 }
 
+@media screen and (min-width:624px) and (max-width:767px) {
+    body {
+        width: 48rem;
+    }
+}
+
 
 /* ......tablet..... */
 

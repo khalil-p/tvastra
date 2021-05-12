@@ -365,7 +365,7 @@ footer i {
     /* Section-1-End */
     /* Section-2 Start */
     .i-1 {
-        top: 39rem;
+        top: 37rem;
         left: 2.7rem;
     }
     .location {
@@ -400,6 +400,27 @@ footer i {
         width: 55%;
     }
     /* Footer End */
+}
+
+@media screen and (min-width:624px) and (max-width:767px) {
+    .location {
+        background-position: 41rem 2rem;
+    }
+    .i-1 {
+        top: 31.5rem;
+        left: 2.7rem;
+    }
+    .section-3-grid .grid-3 img {
+        width: 69%;
+        height: 69%;
+    }
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service-img img {
+        width: 55%;
+        padding: 0;
+    }
 }
 
 
