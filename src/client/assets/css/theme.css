@@ -182,12 +182,6 @@ h5,
 h6 {
     font-family: "nexa-bold";
     color: var(--headingsColor);
-    text-shadow: 1px 1px 2px var(--headingsColor);
-}
-
-h1,
-h2 {
-    text-shadow: 1px 1px 2px var(--headingsColor);
 }
 
 
@@ -254,17 +248,46 @@ button {
 
 footer {
     background-color: var(--footerColor);
-    padding: 2rem 4rem;
+    padding: 4rem 4rem;
+}
+
+footer i,
+footer a,
+footer p {
+    color: var(--white);
+}
+
+
+/* For All Mobile Screens */
+
+@media (min-width: 280px) and (max-width: 767px) {
+    section {
+        padding: 2rem 1rem;
+    }
+    body {
+        width: 39rem;
+    }
+    h1 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+    h2 {
+        line-height: 4rem;
+    }
+    h3 {
+        line-height: 3rem;
+    }
+    h5 {
+        font-family: "nexa-light";
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
 }
 
 
 /* ......tablet..... */
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    h1,
-    h2 {
-        text-shadow: 0.5px 0.5px 1px var(--headingsColor);
-    }
+@media (min-width: 768px) and (max-width: 1024px) {
     nav {
         padding: 0.5rem 2rem;
     }
@@ -272,12 +295,12 @@ footer {
         padding: 2rem 2rem;
     }
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         line-height: 2.6rem;
         padding: 1.5rem;
     }
     p {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         line-height: 2rem;
     }
     input {
@@ -309,6 +332,7 @@ footer {
     }
     span {
         font-size: 1.6rem;
+        font-family: "nexa-bold";
     }
     textarea {
         font-size: 1.5rem;
@@ -332,6 +356,8 @@ footer {
     h5 {
         font-size: 1.5rem;
         line-height: 1.2rem;
+        font-family: "nexa-light";
+        color: var(--burgerButtonColor);
     }
     h6 {
         font-size: 0.8rem;
@@ -348,24 +374,22 @@ footer {
     * {
         letter-spacing: 0.01rem;
     }
-    h1,
-    h2 {
-        text-shadow: 0.5px 0.5px 0px var(--headingsColor);
-    }
     section {
-        padding: 1rem 4rem;
+        padding: 1rem 5rem;
     }
     nav {
         padding: 0;
     }
     li {
-        font-size: 0rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
         font-family: "nexa-bold";
         align-self: center;
     }
     a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-family: "nexa-light";
+        color: var(--burgerButtonColor);
     }
     button {
         font-size: 0.7rem;
@@ -377,19 +401,35 @@ footer {
         padding: 0;
     }
     p {
-        font-size: 1.1rem;
-        line-height: 1.4rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
     input {
         font-size: 1rem;
         padding: 0.8rem 1.5rem;
     }
      ::placeholder {
+        font-size: 0.8rem;
+    }
+    h2 {
+        font-size: 2rem;
+        /* line-height: 2.6rem; */
+    }
+    h3 {
         font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    span {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    h4 {
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
     footer {
         background-color: var(--white);
-        padding: 2rem 3rem;
+        padding: 1rem 5rem;
         /*all four sides same padding*/
     }
     textarea {
@@ -402,20 +442,9 @@ footer {
     label {
         font-size: 0.8rem;
     }
-    h2 {
-        font-size: 2.5rem;
-        /* line-height: 2.6rem; */
-    }
-    h3 {
-        font-size: 2rem;
-        /* line-height: 2.1rem; */
-    }
-    h4 {
-        font-size: 1.5rem;
-        /* line-height: 1.6rem; */
-    }
     h5 {
-        font-size: 1rem;
-        /* line-height: 1.1rem; */
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-family: "nexa-light";
     }
 }
