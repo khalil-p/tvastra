@@ -52,10 +52,18 @@
 .location {
     padding-left: 3rem;
     padding-right: 3rem;
-    background-image: url(../images/gps.png);
-    background-size: 2rem;
+    /* background-image: url(../images/gps.png);*/
+    /* background-size: 2rem;
     background-repeat: no-repeat;
-    background-position: 41rem 2rem;
+    background-position: 41rem 2rem; */
+}
+
+.search-section-location .gps {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 39rem;
+    left: 35rem;
 }
 
 
@@ -371,7 +379,6 @@ footer i {
     .location {
         padding-left: 4rem;
         padding-right: 4rem;
-        background-position: 33rem 2rem;
     }
     /* Section-2 End */
     /* Section-3 Start */
@@ -410,6 +417,10 @@ footer i {
         top: 33.5rem;
         left: 2.7rem;
     }
+    .search-section-location .gps {
+        top: 33.5rem;
+        left: 44rem;
+    }
     .section-3-grid .grid-3 img {
         width: 69%;
         height: 69%;
@@ -432,10 +443,10 @@ footer i {
         display: none;
     }
     .fa-2x {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
     .i-1 {
-        top: 22rem;
+        top: 21.3rem;
     }
     /* section-1 End*/
     /* section-2 Start*/
@@ -451,8 +462,14 @@ footer i {
     .location {
         height: 100%;
         width: 100%;
-        background-size: 1.2rem;
-        background-position: 18rem;
+        /* background-size: 1.2rem;
+        background-position: 18rem; */
+    }
+    .search-section-location .gps {
+        width: 1.4rem;
+        height: 1.4rem;
+        top: 21.1rem;
+        left: 14rem;
     }
     .search-for {
         width: 75%;
@@ -656,6 +673,48 @@ footer i {
     /* Footer End */
 }
 
+@media (min-width: 811px) and (max-width:900px) {
+    /* section-2 Start*/
+    .i-1 {
+        top: 22.3rem;
+    }
+    .search-section-location .gps {
+        top: 22.3rem;
+        left: 15rem;
+    }
+    /* Section-2 End */
+}
+
+@media (min-width:901px) and (max-width:950px) {
+    .i-1 {
+        top: 22.3rem;
+    }
+    .search-section-location .gps {
+        top: 22.5rem;
+        left: 15.5rem;
+    }
+}
+
+@media (min-width:951px) and (max-width:1000px) {
+    .i-1 {
+        top: 23rem;
+    }
+    .search-section-location .gps {
+        top: 22.7rem;
+        left: 16rem;
+    }
+}
+
+@media (min-width:1001px) and (max-width:1024px) {
+    .search-section-location .gps {
+        top: 23rem;
+        left: 16.5rem;
+    }
+    .i-1 {
+        top: 23.1rem;
+    }
+}
+
 @media (min-width: 768px) and (max-width:880px) {
     .doctor .doctor-img {
         height: 70%;
@@ -671,7 +730,7 @@ footer i {
 
 /* For Desktop  */
 
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
     * {
         letter-spacing: normal;
     }
@@ -700,8 +759,10 @@ footer i {
         background-color: var(--white);
         color: var(--textColor);
     }
+    /* nav-bar Section-1 End */
+    /* section-2 Start */
     .i-1 {
-        top: 20.7rem;
+        top: 20.8rem;
         left: 5.7rem;
     }
     .search-section-location .fa-2x {
@@ -713,8 +774,6 @@ footer i {
         background-size: 1.2rem;
         background-position: 9rem 1rem;
     }
-    /* nav-bar Section-1 End */
-    /* section-2 Start */
     .section-2 {
         text-align: left;
         background-image: url(../images/img1.jpg);
@@ -750,6 +809,12 @@ footer i {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    .search-section-location .gps {
+        width: 1rem;
+        height: 1rem;
+        top: 20.7rem;
+        left: 14rem;
     }
     /* Section-2 End */
     /* Section-3 Start */
@@ -1025,3 +1090,34 @@ footer i {
     }
     /*Footer End*/
 }
+
+
+/* 
+@media screen and (min-width:1042px) {
+    .location {
+        background-position: 9.5rem 1rem;
+    }
+}
+
+@media screen and (min-width:1310px) and (max-width: 1350px) {
+    .location {
+        background-position: 14rem 1rem;
+    }
+}
+
+@media screen and (min-width:1270px) and (max-width: 1309px) {
+    .location {
+        background-position: 13.5rem 1rem;
+    }
+}
+
+@media screen and (min-width:1240px) and (max-width: 1269px) {
+    .location {
+        background-position: 13rem 1rem;
+    }
+}
+@media screen and (min-width:1240px) and (max-width: 1269px) {
+    .location {
+        background-position: 13rem 1rem;
+    }
+} */
