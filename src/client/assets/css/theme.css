@@ -51,7 +51,7 @@
 /* HTML ELEMENTS */
 
 html {
-    overflow-y: overlay;
+    overflow-x: wrap;
 }
 
 * {
