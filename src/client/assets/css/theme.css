@@ -1,18 +1,3 @@
-/*  - CONSIDERING RESET.CSS
-    - do not define any particular class in theme.css;
-    - float is obsolete;
-    - do not adjust display property in theme.css, example no flex, grid anyting in theme.css;
-    - no positions to be defined in theme.css;
-    - all colors to be defined in :root
-*/
-
-
-/* changes to be made */
-
-
-/* font-size should not be greater then 3rem; */
-
-
 /* CSS VARIABLE */
 
 :root {
@@ -50,10 +35,6 @@
 
 /* HTML ELEMENTS */
 
-html {
-    overflow-x: wrap;
-}
-
 * {
     letter-spacing: 0.1rem;
     box-sizing: border-box;
@@ -62,23 +43,15 @@ html {
 nav {
     padding: 1rem 1rem;
     height: 100%;
-    /* height added afterwords */
 }
 
 ul {
     list-style: none;
-    /*no padding rrequired as padding is given to nav*/
 }
 
 ul li {
     padding: 0.2rem 0;
 }
-
-
-/* ol does not require list style to change */
-
-
-/* li for both ul and ol */
 
 li {
     font-family: "nexa-light";
@@ -86,9 +59,6 @@ li {
     line-height: 1.8rem;
     color: var(--burgerButtonColor);
 }
-
-
-/* seperate the lable and select tag */
 
 label {
     font-family: "nexa-light";
@@ -127,16 +97,12 @@ section {
     padding: 3rem 2rem;
 }
 
-
-/*input element is by default inline */
-
 input {
     font-size: 2rem;
     font-family: "nexa-light";
     padding: 1.5rem 1.5rem;
     width: 100%;
     color: var(--textColor);
-    border: 1px solid var(--enquiryButtonColor);
 }
 
 ::placeholder {
@@ -163,20 +129,11 @@ textarea {
     padding: 1rem 1.5rem;
 }
 
-
-/*padding is also given to section*/
-
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-
-/* h1 sirf ek jagah use hoga vo bhi upar */
-
-
-/* h1 aur h2 ko ek he  size dena hai */
 
 h1,
 h2,
@@ -188,9 +145,6 @@ h6 {
     color: var(--headingsColor);
     font: bold;
 }
-
-
-/* sab k sab headings ko ek he color dena hai */
 
 h1 {
     font-size: 3.3rem;
@@ -223,12 +177,8 @@ h6 {
     line-height: 1.2rem;
 }
 
-
-/*button tag is by default inline */
-
 button {
     background-color: var(--searchButtonColor);
-    /* font-family: "nexa-light"; */
     font-size: 1.8rem;
     color: var(--white);
     border: 1px solid var(--searchButtonColor);
@@ -247,9 +197,6 @@ button {
     background-color: var(--white);
     color: var(--consultButonColor);
 }
-
-
-/*footer me common bas itna he hai*/
 
 footer {
     background-color: var(--footerColor);
@@ -353,7 +300,6 @@ footer p {
     footer {
         background-color: var(--white);
         padding: 2rem;
-        /*all four sides same padding*/
     }
     a {
         font-size: 1.5rem;
@@ -374,14 +320,12 @@ footer p {
         font-size: 0.8rem;
         line-height: 1rem;
     }
-    /* grid view will me modified in main style.css file. As said by mentor no display and position will be modified in theme.css */
 }
 
 
 /* ....Desktop...... */
 
 @media (min-width: 1025px) {
-    /* all display and position properties will be defined in normal style.css file */
     * {
         letter-spacing: 0.01rem;
     }
@@ -417,14 +361,13 @@ footer p {
     }
     input {
         font-size: 1rem;
-        padding: 0.8rem 1.5rem;
+        padding: 0 1rem;
     }
      ::placeholder {
         font-size: 0.8rem;
     }
     h2 {
         font-size: 2rem;
-        /* line-height: 2.6rem; */
     }
     h3 {
         font-size: 1rem;
@@ -441,7 +384,6 @@ footer p {
     footer {
         background-color: var(--white);
         padding: 1rem 5rem;
-        /*all four sides same padding*/
     }
     textarea {
         font-size: 0.8rem;
