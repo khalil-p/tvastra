@@ -28,12 +28,17 @@
 
 .search-button {
     border-radius: 0;
-    margin: 1.5rem;
+    margin: 1rem;
 }
 
-.section-2 p {
-    padding-bottom: 2rem;
+.search-section {
+    margin-top: 1rem;
 }
+
+
+/* .section-2 p {
+    padding-bottom: 2rem;
+} */
 
 .search-section input {
     margin: 0.4rem 0;
@@ -109,17 +114,16 @@
     text-align: center;
 }
 
-.section-3 h2 {
+
+/* .section-3 h2 {
     padding-bottom: 1rem;
-}
+} */
 
-.section-3 p {
-    padding: 0 1rem;
-}
 
+/* 
 .section-3 ol {
     padding: 2rem;
-}
+} */
 
 .section-3 ol li {
     margin: 2rem 0;
@@ -153,6 +157,10 @@
     align-items: center;
 }
 
+#li-07 {
+    margin-bottom: 1rem;
+}
+
 
 /* section-3 Task-04 End */
 
@@ -163,8 +171,8 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-    margin: 2rem;
-    /* height: 50rem; */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .section-4 {
@@ -174,16 +182,15 @@
 
 .section-4 h2 {
     color: var(--white);
-    padding-bottom: 1rem;
 }
 
 .section-4 p {
     color: var(--white);
-    padding: 0 1rem;
 }
 
 .doctor {
     background-color: var(--white);
+    /* height: 50rem; */
 }
 
 hr {
@@ -196,11 +203,13 @@ hr {
 
 .doctor-img {
     padding-bottom: 2rem;
+    /* height: 75%; */
 }
 
 .doctor-info {
     padding: 0 4rem;
     text-align: left;
+    /* height: 24.5%; */
 }
 
 .doctor-info ol li {
@@ -229,14 +238,6 @@ hr {
 
 .section-5 {
     text-align: center;
-}
-
-.section-5 h2 {
-    padding-bottom: 1rem;
-}
-
-.section-5 p {
-    padding: 0 1rem;
 }
 
 .medical-treatment {
@@ -285,14 +286,6 @@ hr {
     text-align: center;
 }
 
-.section-6 h2 {
-    padding-bottom: 1rem;
-}
-
-.section-6 p {
-    padding: 0 1rem;
-}
-
 .service-img img {
     width: 80%;
     height: 70%;
@@ -330,18 +323,13 @@ hr {
 
 .section-7 h2 {
     color: var(--white);
-    padding-bottom: 1rem;
-}
-
-.section-7 p {
-    padding: 0 1rem;
 }
 
 .enquiryButton {
     padding: 1rem 2rem;
     font-size: 2rem;
     border-radius: 0.5rem;
-    margin: 2rem;
+    margin: 1rem;
     border: none;
 }
 
@@ -388,6 +376,18 @@ footer i {
 
 /* For all mobile screens */
 
+@media (max-width:767px) {
+    .doctor {
+        height: 60rem;
+    }
+    .doctor-img {
+        height: 80%;
+    }
+    .doctor-info {
+        height: 19.5%;
+    }
+}
+
 @media (min-width: 280px) and (max-width: 767px) {
     .container {
         width: 100%;
@@ -416,7 +416,7 @@ footer i {
         font-size: 2.5rem;
     }
     .section-3-grid .grid-3 img {
-        width: 90%;
+        width: 80%;
         height: 70%;
     }
     /* Section-3 End */
@@ -448,6 +448,18 @@ footer i {
     }
 }
 
+@media (max-width:623px) {
+    .section-3 ol li {
+        padding: 2rem 1.5rem;
+    }
+    .grid-2 li a h3 span {
+        font-size: 2rem;
+    }
+    .grid-2 li a h3 {
+        font-size: 2rem;
+    }
+}
+
 
 /* Tablet View */
 
@@ -462,7 +474,7 @@ footer i {
     /* section-1 End*/
     /* section-2 Start*/
     .section-2 p {
-        padding: 0rem 1rem 1rem;
+        padding: 0;
     }
     .search-section input {
         margin: 0rem;
@@ -479,7 +491,7 @@ footer i {
     }
     .search-section {
         display: flex;
-        padding: 1rem 0 2rem 0;
+        padding: 1rem 0;
     }
     .location-icon {
         margin: 0;
@@ -498,6 +510,12 @@ footer i {
     }
     /* section-2 End*/
     /* section-3 Start */
+    .section-3 p {
+        padding: 0;
+    }
+    #li-07 {
+        margin-bottom: 1rem;
+    }
     .section-3-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -536,9 +554,17 @@ footer i {
         font-size: 1.5rem;
         line-height: 2.5rem;
     }
-    /* .section-3-grid .grid-2 li {
-        opacity: 0.7;
-    } */
+    .section-3-grid .grid-3 img {
+        width: 18rem;
+        height: 21rem;
+    }
+    .section-3 ol li {
+        padding: 1.5rem 1rem;
+    }
+    .section-3 ol span {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
     /* section-3 End  */
     /* Section-4 Start */
     .doctor-section {
@@ -560,6 +586,26 @@ footer i {
     .bottom-line {
         height: 1%;
     }
+    .doctor-section {
+        grid-template-rows: repeat(2, 35rem);
+        gap: 1rem;
+    }
+    .doctor-info ol li {
+        font-size: 1.5rem;
+    }
+    .doctor-info ul li {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .doctor-info ul {
+        padding: 0.5rem 0;
+    }
+    .doctor .doctor-img {
+        height: 70%;
+    }
+    .doctor .doctor-info {
+        height: 29%;
+    }
     /* Section-4 End */
     /* Section-5 Start */
     .treatment {
@@ -573,12 +619,30 @@ footer i {
         margin: 0;
         height: 30rem;
     }
+    .treatment .overlay-text h4 {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+    .treatment .overlay-text span {
+        font-size: 1.2rem;
+        font-family: "nexa-light";
+    }
+    .treatment {
+        gap: 1rem;
+    }
     /* Section-5 End */
     /* Section-6 Start */
     .services {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+    .services {
+        gap: 1rem;
+    }
+    .service-img img {
+        padding: 0;
+        padding: 0.5rem;
     }
     /* Section-6 End */
     /* Section-7 Start */
@@ -619,78 +683,6 @@ footer i {
     .footer-social-media i {
         padding: 1rem 0.4rem;
     }
-    /* Footer End */
-}
-
-@media (min-width: 768px) and (max-width:1024px) {
-    /* Section-3 Start */
-    .section-3-grid .grid-3 img {
-        width: 18rem;
-        height: 21rem;
-    }
-    .section-3 ol li {
-        padding: 1.5rem 1rem;
-    }
-    h3 {
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-    }
-    p {
-        font-size: 1.2rem;
-        line-height: 1.6rem;
-    }
-    h4 {
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-    }
-    .section-3 ol span {
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-    }
-    /* Section-3 End */
-    /* Section-4 Start */
-    .doctor-section {
-        grid-template-rows: repeat(2, 35rem);
-        gap: 1rem;
-    }
-    .doctor-info ol li {
-        font-size: 1.5rem;
-    }
-    .doctor-info ul li {
-        font-size: 1rem;
-        line-height: 1.2rem;
-    }
-    .doctor-info ul {
-        padding: 0.5rem 0;
-    }
-    /* Section-4 End */
-    /* Section-5 start */
-    .treatment .overlay-text h4 {
-        font-size: 1.5rem;
-        line-height: 1.7rem;
-    }
-    .treatment .overlay-text span {
-        font-size: 1.2rem;
-        font-family: "nexa-light";
-    }
-    .treatment {
-        gap: 1rem;
-    }
-    /* Section-5 End */
-    /* Section-6 Start */
-    .services {
-        gap: 1rem;
-    }
-    .service-img img {
-        padding: 0;
-        padding: 0.5rem;
-    }
-    h5 {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-    }
-    /* Section-6 End */
-    /* Footer Start */
     .footer-logo img {
         width: 11rem;
     }
@@ -704,19 +696,13 @@ footer i {
         font-size: 1.2rem;
         padding: 1rem 0;
     }
-    /* Footer End */
-}
-
-@media (min-width: 768px) and (max-width:1024px) {
-    .doctor .doctor-img {
-        height: 70%;
-    }
-    .doctor .doctor-info {
-        height: 29%;
-    }
     footer ul a {
         font-size: 1.2rem;
     }
+    #footer-doctor-li {
+        padding-left: 0;
+    }
+    /* Footer End */
 }
 
 
@@ -809,9 +795,6 @@ footer i {
     }
     /* Section-2 End */
     /* Section-3 Start */
-    .section-3 {
-        padding-top: 3rem;
-    }
     .section-3 h2 {
         padding: 0;
     }
@@ -876,7 +859,8 @@ footer i {
     }
     .section-3 ol {
         padding: 0;
-        margin: 3rem 0;
+        margin-top: 2rem;
+        margin-bottom: 0rem;
     }
     .section-3-grid .grid-1 li {
         margin: 0;
