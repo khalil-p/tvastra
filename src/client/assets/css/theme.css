@@ -187,6 +187,7 @@ button {
     border-color: var(--searchButtonColor);
     padding: 1rem 4rem;
     cursor: pointer;
+    font-family: "nexa-light";
 }
 
 .enquiryButton {
@@ -320,7 +321,7 @@ footer p {
         letter-spacing: 0.01rem;
     }
     section {
-        padding: 1rem 5rem;
+        padding: 5rem 5rem;
     }
     nav {
         padding: 0;
@@ -332,42 +333,45 @@ footer p {
         align-self: center;
     }
     a {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         font-family: "nexa-light";
         color: var(--burgerButtonColor);
     }
     button {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         padding: 0.7rem 1rem;
         border-radius: 0.3rem;
     }
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding: 0;
     }
-    p {
-        font-size: 1rem;
-        line-height: 1.2rem;
-    }
-    input {
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-     ::placeholder {
-        font-size: 0.8rem;
-    }
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        line-height: 2.6rem;
+        padding-top: 0;
+        padding-bottom: 1rem;
     }
     h3 {
         font-size: 1rem;
         line-height: 1.2rem;
     }
-    span {
-        font-size: 1rem;
-        line-height: 1.2rem;
-    }
     h4 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+    input {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+    }
+     ::placeholder {
+        font-size: 1rem;
+    }
+    span {
         font-size: 1rem;
         line-height: 1.2rem;
     }
