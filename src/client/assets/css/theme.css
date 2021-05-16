@@ -1,5 +1,10 @@
 /* CSS VARIABLE */
 
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
 :root {
     --main-backgroundColor: #add8e6;
     --footerColor: #021433;

@@ -1,3 +1,9 @@
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+
 /* section-1 start */
 
 .menu-bar {
@@ -852,8 +858,8 @@ footer i {
         grid-row-end: 3;
     }
     .section-3-grid .grid-3 img {
-        width: 90%;
-        height: 82%;
+        width: 100%;
+        height: 76%;
         object-fit: cover;
         padding: 1rem;
     }
