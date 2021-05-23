@@ -39,6 +39,9 @@ nav {
 /*section-1 End*/
 
 /*Section-2 Start*/
+.section-2 {
+  padding-bottom: 0;
+}
 
 .doctor-list {
   display: flex;
@@ -50,10 +53,14 @@ nav {
   background-color: #bdc5cc;
   border: none;
   padding: 0.5rem 1rem;
+  font-size: 2rem;
 }
 
-option {
+.section-2 option {
   font-size: 1rem;
+}
+.section-2 label {
+  font-size: 2rem;
 }
 /* Section-2 End*/
 
@@ -66,11 +73,12 @@ option {
 .doctor h3 {
   padding: 0 1rem;
   color: #2596be;
+  font-size: 2rem;
 }
 
 hr {
   display: inline-flex;
-  width: 3.5rem;
+  width: 4.5rem;
   height: 6px;
   text-align: left;
   background-color: #2596be;
@@ -93,7 +101,7 @@ hr {
   text-align: center;
 }
 .doctor-image img {
-  height: 30rem;
+  height: 15rem;
 }
 
 .section-3 > div:first-child {
@@ -107,18 +115,20 @@ hr {
   margin: 1rem 0;
 }
 .icon {
-  width: 3rem;
+  width: 2rem;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .icon i {
+  width: inherit;
   font-size: 1.7rem;
   color: #2596be;
 }
 p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   align-self: center;
   padding: 0 1.5rem;
@@ -128,6 +138,28 @@ p {
 section.section-3 div.doctor:last-child {
   margin-bottom: 1rem;
 }
+
+.section-3 .suggestion-1 {
+  display: block;
+}
+.section-3 .suggestion-1 ul {
+  padding: 0;
+
+}
+.section-3 .suggestion-1 ul li {
+  font-size: 1.2rem;
+  display: inline-block;
+  width: max-content;
+  align-items: center;
+  font-family: "nexa-bold";
+  border: 1px solid;
+  margin: 0.3rem;
+  border-radius: 2rem;
+  min-width: 4rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
 /* Section-3 End */
 /* Section-4 Start */
 .section-4 {
@@ -160,10 +192,9 @@ footer h2 {
   font-family: "Cinzel", serif;
   padding: 2rem 0;
 }
-footer ul {
-  padding: 0;
-}
-
+footer ul  {
+   padding: 0;
+  }
 footer ul li a {
   font-size: 1.8rem;
 }
@@ -256,9 +287,7 @@ footer p {
   .section-1 {
     padding: 1.5rem;
   }
-  nav {
-    padding: 0 2rem;
-  }
+ 
   .top-logo {
     width: 15rem;
   }
@@ -287,7 +316,7 @@ footer p {
   }
   /* Section-3 End */
 
-  /* tablet section a start */
+  /* tablet section a start
   .section-a-img {
     height: 25rem;
     background-color: var(--main-backgroundColor);
@@ -301,7 +330,6 @@ footer p {
   }
   .overlay-text {
     position: absolute;
-    /* bottom: 10px; */
     top: 17rem;
     z-index: 10;
     padding: 2rem;
@@ -323,9 +351,17 @@ footer p {
     padding-left: 0;
     padding-right: 0;
   }
-  /* tablet section a end */
+  tablet section a end */
+  /* tablet section a Start */
+  .tablet-section-a {
+      display: none;
+  }
 
-  /* Tablet-Section-b Start */
+  /* Taslet Section b Start */
+  .tablet-section-b {
+      display: none;
+  }
+  /* Tablet-Section-b Start
   .tablet-section-b {
     display: block;
     width: 35%;
@@ -340,7 +376,6 @@ footer p {
     height: 1.2rem;
     padding: 0;
     margin: 0;
-    /* box-shadow: 1px 1px 2px 2.5px #ccc; */
   }
 
   .tablet-section-b h5 {
@@ -378,7 +413,6 @@ footer p {
     font-size: 1.5rem;
     font-family: "nexa-light";
     margin-left: 1.5rem;
-    /* margin-right: 0; */
   }
   .filter-by-location {
     padding-top: 2rem;
@@ -398,14 +432,14 @@ footer p {
     display: flex;
     align-items: center;
   }
-  /* Tablet-Section-b End */
+  Tablet-Section-b End */
 
   #main-section {
     display: flex;
   }
   /* Section-3 Start */
   .doctor .doctor-image img {
-    height: 30rem;
+    height: 100%;
     /* width: 15rem; */
   }
   .doctor {
@@ -417,7 +451,7 @@ footer p {
     padding: 0;
   }
   .section-3 .doctor .doctor-name hr {
-    width: 3rem;
+    width: 2rem;
     height: 5px;
   }
   .doctor {
@@ -444,7 +478,13 @@ footer p {
     margin: 1rem;
   }
   .section-3 .doctor-appointment {
-    margin: 3rem 0;
+    margin: 1.5rem 3rem;
+    text-align: left;
+
+  }
+  .section-3 .doctor-appointment button {
+    padding: 0.5rem 4rem;
+
   }
   /* Section-3 End */
   /* Footer Start */
@@ -532,7 +572,7 @@ footer p {
     font-size: 2em;
   }
   /* Section-1 End */
-  /* Tablet Section a Start */
+  /* Tablet Section a Start
   .tablet-section-a {
     display: block;
     padding-left: 0;
@@ -545,7 +585,10 @@ footer p {
   .overlay-text {
     top: 14rem;
   }
-  /* Tablet Section a End */
+  Tablet Section a End */
+  .tablet-section-a{
+      display: none;
+  }
   /* Section-2 Start */
   .section-2 label {
     font-size: 2rem;
@@ -563,15 +606,13 @@ footer p {
     padding: 0;
   }
   .doctor-name {
-    margin: 0.5rem 0;
+    margin: 1.5rem 0;
   }
   .doctor h3 {
     font-size: 1.8rem;
     line-height: 2.1rem;
   }
-  .section-3 .main-div ul {
-    margin-left: 0.5rem;
-  }
+ 
   .section-3 .main-div ul li {
     margin: 1rem 0;
   }
@@ -581,11 +622,14 @@ footer p {
   .section-3 .doctor-appointment {
     margin: 0;
   }
+  .doctor-appointment {
+      text-align: left;
+  }
   .doctor-appointment button {
     margin: 0;
-    padding: 1rem 0.5rem;
+    padding: 1rem 3rem;
     font-size: 1.3rem;
-    margin: 2rem 0;
+    margin: 2rem;
   }
   .doctor .doctor-image img {
     height: 100%;
@@ -598,7 +642,7 @@ footer p {
   }
   /*Section-4 End */
 
-  /* Tablet Section b Start */
+  /* Tablet Section b Start
   .tablet-section-b {
     padding: 0;
     margin-right: 0.5rem;
@@ -625,7 +669,10 @@ footer p {
   .tablet-section-b ul li {
     margin: 0.5rem 0;
   }
-  /* Tablet Section b End */
+  Tablet Section b End */
+  .tablet-section-b {
+      display: none;
+  }
   /* Footer Start */
   footer ul li a {
     font-size: 1.2rem;
@@ -651,8 +698,8 @@ footer p {
     display: none;
   }
   .section-1 {
-    padding: 1.5rem 3rem;
-    padding-bottom: 0.5rem;
+    padding: 1rem 3rem;
+    padding-bottom: 0;
   }
   .navbar {
     padding-top: 0;
@@ -663,10 +710,10 @@ footer p {
     padding-left: 0;
   }
   .nav-2 ul li a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .nav-2 .menu-buttons button {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 0.5rem 1rem;
   }
 
@@ -699,7 +746,7 @@ footer p {
 
   /* Tablet Section a Start */
   .section-a-img {
-    height: 20rem;
+    height: 15rem;
     background-color: var(--main-backgroundColor);
     position: relative;
   }
@@ -737,14 +784,14 @@ footer p {
   /* Tablet Section a End */
   /* Section-2 Start */
   .section-2 .doctor-list label {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .section-2 .doctor-list label select {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .section-2 {
-    padding: 1rem 4rem;
-    padding-bottom: 0;
+    padding: 0 4rem;
+
   }
   /* Section-2 End */
   /* ...............................coiped from tablet */
@@ -771,8 +818,8 @@ footer p {
     align-items: center;
   }
   .tablet-section-b ul li input {
-    width: 1rem;
-    height: 1rem;
+    width: 0.9rem;
+    height: 0.9rem;
     padding: 0;
     margin: 0;
     /* box-shadow: 1px 1px 2px 2.5px #ccc; */
@@ -781,7 +828,7 @@ footer p {
     background: black;
   }
   .tablet-section-b h5 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: "nexa-bold";
     margin: 0;
   }
@@ -789,14 +836,14 @@ footer p {
     background-color: #bdc5cc;
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .tablet-section-b .div-2 {
     display: flex;
     justify-content: space-between;
   }
   .tablet-section-b .div-2 label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2rem;
   }
   .tablet-section-b .div-2 i {
@@ -813,7 +860,7 @@ footer p {
   .tablet-section-b ul li label {
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: "nexa-light";
     margin-left: 1.5rem;
     /* margin-right: 0; */
@@ -847,7 +894,7 @@ footer p {
     font-family: "nexa-bold";
     color: var(--main-backgroundColor);
   }
-  .tablet-section-b .suggestion {
+  /* .tablet-section-b .suggestion {
     display: block;
   }
   .tablet-section-b .suggestion ul {
@@ -874,7 +921,7 @@ footer p {
     background-color: white;
     padding-left: 1rem;
     color: var(--main-backgroundColor);
-  }
+  } */
 
   /* Tablet-Section-b End */
 
@@ -884,7 +931,7 @@ footer p {
   }
   /* Section-3 Start */
   .doctor .doctor-image img {
-    height: 20rem;
+    height: 100%;
     /* width: 15rem; */
   }
   .doctor {
@@ -916,9 +963,10 @@ footer p {
   .section-3 .main-div ul {
     padding-left: 0;
     margin-left: 3.5rem;
+    margin-bottom: 0;
   }
   .section-3 .main-div ul li p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     padding: 0 1rem;
     margin: 0;
     display: inline-block;
@@ -926,7 +974,9 @@ footer p {
   .section-3 .main-div ul li {
     margin: 0.5rem;
     display: inline-block;
-    width: 13rem;
+    font-size: 0.7rem;
+    font-family: "nexa-light";
+    padding: 0.3rem 1rem;
   }
   .section-3 .doctor-appointment {
     margin: 0;
@@ -934,15 +984,18 @@ footer p {
     text-align: left;
   }
   .doctor-appointment button {
-    font-size: 1rem;
-    padding: 0.7rem 2rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 3rem;
   }
   .section-3 .doctor ul .icon i {
     font-size: 1.2rem;
   }
   .section-3 .doctor ul .icon {
-    width: max-content;
+    width: 1rem;
     display: inline-block;
+  }
+  .section-3 .main-div .hospital-info li {
+      padding: 0;
   }
 
   /* Section-3 End */
