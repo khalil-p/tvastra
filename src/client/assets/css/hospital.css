@@ -759,7 +759,7 @@ footer p {
   .overlay-text {
     position: absolute;
     /* bottom: 10px; */
-    top: 14.5rem;
+    top: 10.5rem;
     z-index: 10;
     padding: 0 5rem;
     text-align: left;
@@ -784,10 +784,11 @@ footer p {
   /* Tablet Section a End */
   /* Section-2 Start */
   .section-2 .doctor-list label {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .section-2 .doctor-list label select {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
   }
   .section-2 {
     padding: 0 4rem;
@@ -1023,14 +1024,15 @@ footer p {
     margin: 0;
   }
   .section-4 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
   }
   .section-4 button {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem;
+    border-radius: 0;
     /* margin: 2rem 0; */
   }
   /* Section-4 End */
@@ -1086,7 +1088,7 @@ footer p {
     font-size: 1rem;
   }
   footer p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 1rem 0;
     margin: 0;
   }
@@ -1097,11 +1099,11 @@ footer p {
     padding-left: 0;
   }
   footer ul li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #footer-base-line {
     width: 100%;
-    height: 1rem;
+    height: 0.5rem;
     background-color: var(--main-backgroundColor);
   }
   /* Footer End */
