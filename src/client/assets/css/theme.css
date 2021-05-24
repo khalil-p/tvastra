@@ -316,7 +316,7 @@ footer p {
     letter-spacing: 0.01rem;
   }
   section {
-    padding: 5rem 5rem;
+    padding: 3rem 5rem;
   }
   nav {
     padding: 0;
@@ -328,21 +328,21 @@ footer p {
     align-self: center;
   }
   a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: "nexa-light";
     color: var(--burgerButtonColor);
   }
   button {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 0.7rem 1rem;
     border-radius: 0.3rem;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     padding: 0;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 2.6rem;
     padding-top: 0;
     padding-bottom: 1rem;
@@ -356,7 +356,7 @@ footer p {
     line-height: 1.8rem;
   }
   p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1.8rem;
   }
   input {

@@ -781,7 +781,7 @@ footer p {
     background: black;
   }
   .tablet-section-b h5 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: "nexa-bold";
     margin: 0;
   }
@@ -789,7 +789,7 @@ footer p {
     background-color: #bdc5cc;
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
   }
   .tablet-section-b .div-2 {
     display: flex;
@@ -918,7 +918,7 @@ footer p {
     margin-left: 3.5rem;
   }
   .section-3 .main-div ul li p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0 1rem;
     margin: 0;
     display: inline-block;
@@ -976,9 +976,10 @@ footer p {
   }
   .section-4 button {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 1rem;
     /* margin: 2rem 0; */
+    border-radius: 0;
   }
   /* Section-4 End */
   /* Footer Start */
