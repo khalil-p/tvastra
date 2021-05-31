@@ -212,6 +212,13 @@ footer p {
 }
 /* Footer End */
 
+@media (min-width: 280px) and (max-width: 767px) {
+  body {
+    position: absolute;
+    overflow: auto;
+  }
+}
+
 @media (max-width: 450px) {
   section {
     padding: 1rem 1.5rem;

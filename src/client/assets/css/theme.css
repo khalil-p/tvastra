@@ -212,10 +212,10 @@ footer p {
 /* For All Mobile Screens */
 
 @media (min-width: 280px) and (max-width: 767px) {
-  body {
+  /* body {
     position: absolute;
     overflow: auto;
-  }
+  } */
   h1 {
     font-size: 3rem;
     line-height: 3.6rem;

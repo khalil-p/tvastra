@@ -2,6 +2,7 @@
   width: 100vw;
 } */
 
+
 .tablet-section-a {
   display: none;
 }
@@ -180,6 +181,13 @@ footer p {
   display: none;
 }
 /* Footer End */
+
+@media (min-width: 280px) and (max-width: 767px) {
+  body {
+    position: absolute;
+    overflow: auto;
+  }
+}
 
 @media (max-width: 450px) {
   section {
