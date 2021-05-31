@@ -6,11 +6,16 @@ body {
   margin: 0;
   min-height: 100vh;
 } */
-body{
+body {
   overflow-y: scroll;
+
 }
-
-
+.section-1 {
+  min-height: 5vh;
+}
+.section-2 {
+  min-height: 95vh;
+}
 
 .menu-bar {
   display: none;
@@ -131,8 +136,10 @@ nav img {
 }
 
 /* section-2 end */
+/* @media (min-width:320px) and (max-width:400px){
 
-@media (max-width: 415px) {
+} */
+@media (max-width: 767px) {
   section {
     padding: 1rem;
   }
@@ -179,9 +186,43 @@ nav img {
   }
 }
 
+@media (min-width: 414px) and (max-width: 767px) {
+  .section-2 .login-div h2 {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .section-2 .login-div hr {
+    margin-bottom: 1.2rem;
+  }
+  input {
+    font-size: 1.5rem;
+  }
+  .section-2 .login-div .mobile-number .fas {
+    font-size: 1.2em;
+  }
+  .section-2 .login-div input {
+    margin: 0.3rem 0;
+  }
+  .section-2 .login-div .mobile-number .questionMarkIcon {
+    margin: 0.3rem 0;
+}
+.section-2 .login-div button {
+  padding: 0.5rem;
+  margin: 0.8rem;
+  font-size: 1.2rem;
+}
+.section-2 .not-registered-div {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.section-2 .copy-right {
+  font-size: 0.9rem;
+}
+}
 /* For Tablet View */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .section-1{
+  .section-1 {
     min-height: 5vh;
   }
   .section-2 {
@@ -196,7 +237,7 @@ nav img {
   .navbar-logo {
     width: 7rem;
   }
-  .menu-toggle i.fa-2x{
+  .menu-toggle i.fa-2x {
     font-size: 1rem;
   }
   ::placeholder {
@@ -214,7 +255,7 @@ nav img {
   }
 }
 @media (min-width: 950px) and (max-width: 1024px) {
-  .section-1{
+  .section-1 {
     min-height: 5vh;
   }
   .section-2 {
