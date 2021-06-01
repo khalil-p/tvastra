@@ -1,10 +1,8 @@
-body {
 
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-}
 .section-2{
     min-height: 100vh;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 section {
   padding: 4rem 1.5rem;
