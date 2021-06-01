@@ -1,7 +1,10 @@
 body {
-    min-height: 100vh;
+
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
+}
+.section-2{
+    min-height: 100vh;
 }
 section {
   padding: 4rem 1.5rem;
@@ -227,7 +230,7 @@ select:invalid {
   }
   .section-1 {
     padding: 1rem 2rem;
-}
+  }
   .mobile-nav {
     display: none;
   }
