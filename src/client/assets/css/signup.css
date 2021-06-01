@@ -1,8 +1,7 @@
-
-.section-2{
-    min-height: 100vh;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+.section-2 {
+  min-height: 100vh;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 section {
   padding: 4rem 1.5rem;
@@ -185,6 +184,9 @@ select:invalid {
 @media (min-width: 768px) and (max-width: 1024px) {
   .mobile-nav img {
     width: 22%;
+  }
+  .section-2 .div-1 {
+    margin-bottom: 9rem;
   }
   .mobile-nav i.fa-2x {
     font-size: 2.2rem;
