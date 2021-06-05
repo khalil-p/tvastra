@@ -1,7 +1,8 @@
-.section-2 {
+/* .section-2 {
   min-height: 100vh;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+} */
+body{
+  background-color: var(--main-backgroundColor);
 }
 section {
   padding: 4rem 1.5rem;
@@ -13,6 +14,7 @@ section {
 /* Section-1 Start */
 .section-1 {
   padding: 1rem;
+  background-color: white;
 }
 nav {
   display: flex;
@@ -226,8 +228,9 @@ select:invalid {
 /* Desktop View Start */
 @media (min-width: 1025px) {
   section {
-    padding: 10rem 24.5rem;
+    padding: 6rem 24.5rem;
   }
+  /* Section-1 Start */
   .section-1 {
     padding: 1rem 2rem;
   }
@@ -257,6 +260,7 @@ select:invalid {
   .menu-barv .menu-buttons button {
     padding: 0.5rem 1rem;
   }
+  /* Section-1 End */
   /* Section-2 Start */
   .section-2 .div-1 h2 {
     font-size: 1.2rem;

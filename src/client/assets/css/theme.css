@@ -30,6 +30,10 @@
   font-family: nexa-light;
   src: url(../fonts/Nexa-Light.otf);
 }
+@font-face {
+  font-family: nexa-thin;
+  src: url(../fonts/Nexa/Nexa_V2_2020/WEB/NexaDemo-Light.woff);
+}
 
 /* HTML ELEMENTS */
 

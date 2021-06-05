@@ -5,9 +5,7 @@
 .tablet-section-a {
   display: none;
 }
-.nav-2 {
-  display: none;
-}
+
 .tablet-section-b {
   display: none;
 }
@@ -18,6 +16,9 @@ section {
   padding: 2rem 3rem;
 }
 /* section-1 Start */
+.nav-2 {
+  display: none;
+}
 .section-1 {
   padding: 1rem;
 }

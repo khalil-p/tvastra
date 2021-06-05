@@ -660,7 +660,7 @@ footer p {
   }
   .section-1 {
     padding: 1.5rem 3rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0;
   }
   .navbar {
     padding-top: 0;
@@ -671,10 +671,10 @@ footer p {
     padding-left: 0;
   }
   .nav-2 ul li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .nav-2 .menu-buttons button {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 0.5rem 1rem;
   }
 
@@ -745,10 +745,10 @@ footer p {
   /* Tablet Section a End */
   /* Section-2 Start */
   .section-2 .doctor-list label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .section-2 .doctor-list label select {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .section-2 {
     padding: 1rem 4rem;
@@ -779,8 +779,8 @@ footer p {
     align-items: center;
   }
   .tablet-section-b ul li input {
-    width: 1rem;
-    height: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
     padding: 0;
     margin: 0;
     /* box-shadow: 1px 1px 2px 2.5px #ccc; */
@@ -804,7 +804,7 @@ footer p {
     justify-content: space-between;
   }
   .tablet-section-b .div-2 label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2rem;
   }
   .tablet-section-b .div-2 i {
@@ -821,7 +821,7 @@ footer p {
   .tablet-section-b ul li label {
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: "nexa-light";
     margin-left: 1.5rem;
     /* margin-right: 0; */
@@ -851,7 +851,7 @@ footer p {
     justify-content: space-between;
   }
   .tablet-section-b .div-4 a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: "nexa-bold";
     color: var(--main-backgroundColor);
   }
@@ -912,7 +912,7 @@ footer p {
   }
   .doctor h3 {
     margin-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2rem;
   }
   .doctor-name {
@@ -926,7 +926,7 @@ footer p {
     margin-left: 3.5rem;
   }
   .section-3 .main-div ul li p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0 1rem;
     margin: 0;
     display: inline-block;
@@ -942,7 +942,7 @@ footer p {
     text-align: left;
   }
   .doctor-appointment button {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0.7rem 2rem;
   }
   .section-3 .doctor ul .icon i {
@@ -978,13 +978,13 @@ footer p {
     margin: 0;
   }
   .section-4 p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     padding: 0;
     margin: 0;
   }
   .section-4 button {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     padding: 1rem;
     /* margin: 2rem 0; */
     border-radius: 0;
@@ -1031,20 +1031,22 @@ footer p {
   }
   .footer-social-media i {
     padding: 1rem 0.4rem;
+    padding-top: 0;
   }
   .footer-logo img {
-    width: 10rem;
+    width: 8rem;
   }
   .footer-logo ul li {
     padding: 0.8rem;
   }
   footer i {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   footer p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 1rem 0;
     margin: 0;
+    padding-top: 0;
   }
   footer ul a {
     font-size: 1.2rem;
@@ -1053,7 +1055,7 @@ footer p {
     padding-left: 0;
   }
   footer ul li a {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   #footer-base-line {
     width: 100%;

@@ -13,13 +13,9 @@
   justify-content: space-between;
   align-items: center;
 }
-nav img {
-  width: inherit;
-  height: inherit;
-}
 
 .navbar-logo {
-  width: 10rem;
+  width: 8rem;
 }
 
 /* section-1 end */
@@ -390,10 +386,10 @@ footer i {
   }
   /* Section-1-Start */
   .navbar-logo {
-    width: 10rem;
+    width: 8rem;
   }
   .section-1 .menu-toggle .fa-2x {
-    font-size: 2em;
+    font-size: 1.2em;
   }
   /* Section-1-End */
   /* Section-2 Start */

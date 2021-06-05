@@ -7,15 +7,16 @@ body {
   min-height: 100vh;
 } */
 body {
-  overflow-y: scroll;
+background-color: var(--main-backgroundColor);
 
 }
 .section-1 {
-  min-height: 5vh;
+  /* min-height: 5vh; */
+  background-color: white;
 }
-.section-2 {
+/* .section-2 {
   min-height: 95vh;
-}
+} */
 
 .menu-bar {
   display: none;
