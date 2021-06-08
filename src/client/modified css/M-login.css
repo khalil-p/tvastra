@@ -1,0 +1,183 @@
+body {
+  background-color: var(--main-backgroundColor);
+}
+
+/* MAIN DIV START */
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+/* MAIN DIV END */
+/* SECTION-1 START */
+.section-1 {
+  background-color: white;
+  width: 100%;
+}
+.section-1 .menu-bar {
+  display: none;
+}
+
+.section-1 .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-1 .navbar-logo {
+  width: 8rem;
+}
+
+.section-1 .menu-toggle .fa-2x {
+  font-size: 1.2rem;
+}
+/* SECTION-1 END */
+
+/* SECTION-2 START */
+
+.section-2 {
+  background-color: var(--main-backgroundColor);
+  text-align: center;
+  display: grid;
+  align-items: center;
+  width: 100%;
+}
+
+.login-div {
+  background-color: var(--white);
+  padding: 0;
+}
+
+.section-2 .login-div hr {
+  border: none;
+  border-top: solid 1px grey;
+  margin-bottom: 2rem;
+}
+
+.section-2 .login-div h2 {
+  margin: 2rem;
+  padding: 0;
+  color: var(--main-backgroundColor);
+}
+
+.section-2 .login-div input {
+  margin: 0.5rem 0;
+  width: 85%;
+  border: solid 1px grey;
+  padding: 1.5rem 1rem;
+}
+
+.section-2 .login-div button {
+  width: 85%;
+  border-radius: 0;
+  padding: 1.5rem 0.5rem;
+  letter-spacing: 0.3em;
+  margin: 1rem;
+}
+
+.mobile-number {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  text-align: center;
+  margin-left: 7.5%;
+}
+
+.section-2 .login-div .mobile-number input {
+  border-right: none;
+  width: 90%;
+}
+
+.section-2 .login-div .mobile-number .fas {
+  width: inherit;
+  opacity: 0.5;
+}
+
+.section-2 .login-div .mobile-number .questionMarkIcon {
+  border: solid 1px grey;
+  border-left: none;
+  margin: 0.5rem 0;
+  display: grid;
+  align-items: center;
+  justify-content: right;
+  padding-right: 1rem;
+  width: 10%;
+}
+
+.section-2 .not-registered-div {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-2 .login-div .not-registered-div span {
+  font-family: "nexa-bold";
+  color: var(--main-backgroundColor);
+}
+
+p {
+  font-family: "nexa-bold";
+}
+p.copy-right {
+  text-align: center;
+}
+
+/* SECTION-2 END */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section-2 {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  /* SECTION-1 START */
+  .section-1 .img-div {
+    width: 10%;
+    /* align-self: center; */
+    display: flex;
+    align-items: center;
+  }
+  .section-1 .menu-toggle {
+    display: none;
+  }
+
+  .section-1 {
+    padding: 1rem 2rem;
+  }
+
+  .section-1 .menu-bar {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+
+  .section-1 .menu-bar ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-1 .menu-bar ul li {
+    padding: 0;
+  }
+
+  .section-1 .menu-buttons .login-button {
+    background-color: var(--white);
+    color: var(--textColor);
+  }
+  /* SECTION-1 END */
+
+  /* SECTION-2 START */
+  .section-2 {
+    width: 45%;
+  }
+  /* SECTION-2 END */
+}

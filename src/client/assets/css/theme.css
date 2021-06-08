@@ -82,8 +82,8 @@ a {
 
 p {
   font-family: "nexa-light";
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   color: var(--textColor);
 }
 
@@ -95,7 +95,7 @@ span {
 }
 
 section {
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
 
 input {

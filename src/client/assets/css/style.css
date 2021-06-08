@@ -1,7 +1,5 @@
-/* body{
-    width: 100vw;
-} */
-/* section-1 start */
+
+/* SECTION-1 START */
 
 .menu-bar {
   display: none;
@@ -18,7 +16,7 @@
   width: 8rem;
 }
 
-/* section-1 end */
+/* SECTION-1 END */
 
 /* section-2 start */
 
@@ -35,10 +33,6 @@
 .search-section {
   margin-top: 1rem;
 }
-
-/* .section-2 p {
-    padding-bottom: 2rem;
-} */
 
 .search-section input {
   margin: 0.4rem 0;
@@ -111,15 +105,6 @@
 .section-3 {
   text-align: center;
 }
-
-/* .section-3 h2 {
-    padding-bottom: 1rem;
-} */
-
-/* 
-.section-3 ol {
-    padding: 2rem;
-} */
 
 .section-3 ol li {
   margin: 2rem 0;
@@ -899,7 +884,6 @@ footer i {
   }
   .doctor-img img {
     object-fit: cover;
-    /* object-position: 0 15%; */
   }
   .doctor .doctor-info {
     height: 27%;
