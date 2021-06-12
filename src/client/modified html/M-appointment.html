@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../modified css/M-theme.css" />
+    <link rel="stylesheet" href="../modified css/M-appointment.css" />
+    <title>Appointment</title>
+  </head>
+
+  <body>
+    <!-- SECTION-1 START -->
+    <section class="section-1">
+      <nav class="navbar">
+        <img
+          class="navbar-logo"
+          src="../assets/images/Logo.jpg"
+          alt="logo-jpg"
+        />
+
+        <div class="menu-bar">
+          <ul>
+            <li><a href="../modified html/M-doctor.html">Doctors</a></li>
+            <li><a href="../modified html/M-hospital.html">Hospitals</a></li>
+            <li><a href="#">Treatment</a></li>
+            <li><a href="#">Other Services</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <div class="menu-buttons">
+            <button class="login-button">Login / Sign Up</button>
+            <button>Get a Quote</button>
+          </div>
+        </div>
+        <div class="menu-toggle"><i class="fas fa-bars fa-2x"></i></div>
+      </nav>
+    </section>
+    <!-- SECTION-1 END -->
+
+    <section class="section-2">
+      <form action="">
+        <div class="div-2-0">
+          <h1>Book An Appointment</h1>
+          <hr />
+          <div class="div-2-1">
+            <label for="appointment-date" id="appointment-date" class="label-1">
+              <h3>Select Appointment Date*</h3></label
+            >
+            <input
+              class="date"
+              type="date"
+              name="appointment-date"
+              id="appointment-date"
+              required
+            />
+            <label for="time-interval" class="label-2"
+              ><h3>Time Interval*</h3></label
+            >
+            <div class="div-2-2">
+              <input type="radio" id="morning" name="time" />
+              <label for="morning">Morning</label>
+            </div>
+            <div class="div-2-2">
+              <input type="radio" id="afternoon" name="time" />
+              <label for="afternoon">Afternoon</label>
+            </div>
+            <div class="div-2-2">
+              <input type="radio" id="evening" name="time" />
+              <label for="evening">Evening</label>
+            </div>
+          </div>
+
+          <div class="div-2-1">
+            <label for="appointment-status" class="label-2"
+              ><h3>Appointment Status / Urgency*</h3></label
+            >
+            <div class="div-2-2">
+              <input type="radio" id="routine" name="urgency" />
+              <label for="routine">Routine Check-up</label>
+            </div>
+            <div class="div-2-2">
+              <input type="radio" id="non-urgent" name="urgency" />
+              <label for="non-urgent">Non Urgent Check-up</label>
+            </div>
+            <div class="div-2-2">
+              <input type="radio" id="urgent" name="urgency" />
+              <label for="urgent">Urgent Check-up</label>
+            </div>
+            <div class="div-2-2">
+              <input type="radio" id="surgirical" name="urgency" />
+              <label for="surgirical">Surgirical Appointment</label>
+            </div>
+          </div>
+          <div class="div-2-3">
+            <h3>Upload Previuos Health Record</h3>
+            <button id="">Choose file</button>
+            <label for="choose-file">No file choosen</label>
+          </div>
+
+          <div class="div-2-4">
+            <label for="details">
+              <h3>Appointment Details </h3>
+            </label>
+            <textarea name="details" id="details" cols="30" rows="5"></textarea>
+          </div>
+          <div class="signup-button-div">
+            <button>SIGN UP</button>
+            <div class="font-icon-1">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <p class="copy-right">All Rights Reserved 	&#169; Tvastra 2020 </p>
+  </body>
+</html>

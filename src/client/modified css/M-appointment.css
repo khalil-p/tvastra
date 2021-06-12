@@ -1,0 +1,221 @@
+body {
+  background-color: var(--main-backgroundColor);
+  display: flex;
+  flex-direction: column;
+}
+/* SECTION-1 START */
+.section-1 {
+  background-color: white;
+}
+.section-1 .menu-bar {
+  display: none;
+}
+
+.section-1 .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-1 .navbar-logo {
+  width: 8rem;
+}
+
+.section-1 .menu-toggle .fa-2x {
+  font-size: 1.2rem;
+}
+/* SECTION-1 END */
+
+/* SECTION-2 START */
+.section-2 h1 {
+  color: rgb(53, 149, 187);
+  text-align: center;
+  margin: 2rem 0;
+}
+.section-2 .label-1 {
+  display: block;
+  margin-bottom: 2rem;
+}
+.section-2 .label-2 {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.section-2 .date {
+  border: none;
+  border: 5px solid grey;
+  font-size: 1.2rem;
+}
+.section-2 .div-2-0 {
+  background-color: var(--white);
+  box-sizing: border-box;
+  border: 1px solid white;
+  box-shadow: 0 0 10px #000000;
+}
+.section-2 .div-2-1 {
+  margin: 2rem;
+}
+.section-2 .div-2-2 {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.section-2 .div-2-2 input[type="radio"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: grey;
+  color: grey;
+  margin-left: 0;
+}
+
+.section-2 .div-2-2 label {
+  margin-top: 5px;
+  margin-left: 1rem;
+}
+.section-2 .div-2-3 {
+  margin: 2rem;
+}
+.section-2 .div-2-3 h3 {
+  margin-bottom: 1.5rem;
+}
+.section-2 .div-2-3 button {
+  border-radius: 0;
+  border-color: grey;
+  background-color: grey;
+  padding: 1rem;
+}
+.section-2 .div-2-4 {
+  margin: 2rem;
+}
+.section-2 .div-2-4 label {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.section-2 .div-2-4 textarea {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 0;
+}
+.section-2 .signup-button-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.section-2 .signup-button-div button {
+  width: 90%;
+  letter-spacing: 0.4rem;
+  padding: 1rem;
+  margin: 0 2rem;
+  margin-bottom: 2rem;
+  margin-right: 0;
+  border-radius: 0;
+}
+
+.section-2 .signup-button-div .font-icon-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  margin-left: 0;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  background-color: var(--searchButtonColor);
+  color: white;
+}
+
+/* SECTION-2 END */
+
+.copy-right {
+  font-family: "nexa-bold";
+  text-align: center;
+}
+
+@media (max-width: 415px) {
+  /* h3 {
+    font-size: 1.4rem;
+  } */
+  .section-2 .div-2-2 label {
+    margin-top: 4px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) {
+  /* SECTION-1 START */
+  .section-1 .menu-toggle {
+    display: none;
+  }
+
+  .section-1 {
+    padding: 1rem 2rem;
+  }
+
+  .section-1 .menu-bar {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .section-1 .navbar-logo {
+    width: 10%;
+  }
+
+  .section-1 .menu-bar ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-1 .menu-bar ul li {
+    padding: 0;
+  }
+
+  .section-1 .menu-buttons .login-button {
+    background-color: var(--white);
+    color: var(--textColor);
+  }
+  /* SECTION-1 END */
+  /* SECTION-2 START */
+  .section-2 {
+    margin: 0 17rem;
+  }
+  .section-2 h1 {
+    margin: 1rem 0;
+  }
+  .section-2 .div-2-1 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .section-2 .label-1 {
+    margin-bottom: 1rem;
+  }
+  .section-2 .div-2-3 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .section-2 .div-2-3 h3 {
+    margin-bottom: 1rem;
+  }
+  .section-2 .div-2-4 {
+    margin: 1rem 2rem;
+  }
+  .section-2 .div-2-4 label {
+    margin-bottom: 1rem;
+  }
+  .section-2 .label-2 {
+    margin-top: 1.5rem;
+  }
+  .section-2 .div-2-2 {
+    margin-bottom: 0.5rem;
+  }
+  /* SECTION-2 END */
+}
