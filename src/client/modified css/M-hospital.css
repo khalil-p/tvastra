@@ -376,7 +376,7 @@ footer .social-media {
   .tablet-section-a h2 {
     margin: 0;
     font-family: sans-serif;
-    font-weight:lighter;
+    font-weight: lighter;
     letter-spacing: 0.3rem;
   }
   .tablet-section-a h2 span {
@@ -444,7 +444,9 @@ footer .social-media {
   }
   .tablet-section-b .div-2 hr {
     width: 1rem;
-    height: 0.4rem;
+    height: 0.3rem;
+    border: none;
+    background-color: black;
   }
   .tablet-section-b .div-4 {
     display: flex;
@@ -484,7 +486,7 @@ footer .social-media {
     font-family: "nexa-bold";
     color: var(--main-backgroundColor);
   }
-  /* TABLET-SECTION-B START */
+  /* TABLET-SECTION-B END */
 
   /* MAIN SECTION START */
   #main-section {

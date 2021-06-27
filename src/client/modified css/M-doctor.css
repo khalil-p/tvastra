@@ -163,7 +163,17 @@ footer .social-media {
 
 /* MEDIA QUERRIES */
 
-@media (max-width: 415px) {
+@media (max-width: 767px) {
+  #main-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .section-3 {
+    padding-top: 0;
+  }
+  section.section-3 div.doctor:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -191,7 +201,7 @@ footer .social-media {
     object-position: 50% 100%;
     position: relative;
   }
-  .tablet-section-a .overlay-div{
+  .tablet-section-a .overlay-div {
     position: absolute;
     width: 100%;
     height: 25rem;
@@ -308,7 +318,7 @@ footer .social-media {
     text-align: center;
   }
   .section-3 .doctor-image {
-    height: 25rem;
+    height: 24rem;
   }
   .section-3 .doctor {
     display: grid;
@@ -426,7 +436,7 @@ footer .social-media {
     object-position: 50% 100%;
     position: relative;
   }
-  .tablet-section-a .overlay-div{
+  .tablet-section-a .overlay-div {
     position: absolute;
     width: 100%;
     height: 25rem;
@@ -503,6 +513,8 @@ footer .social-media {
   .tablet-section-b .div-2 hr {
     width: 1rem;
     height: 0.3rem;
+    border: none;
+    background-color: black;
   }
   .tablet-section-b .div-4 {
     display: flex;
@@ -584,7 +596,7 @@ footer .social-media {
   }
 
   .section-3 .doctor-image {
-    height: 20rem;
+    height: 16rem;
   }
   .section-3 .doctor {
     display: grid;
@@ -765,7 +777,9 @@ footer .social-media {
 
   .tablet-section-b .div-2 hr {
     width: 1rem;
-    height: 0.4rem;
+    height: 0.3rem;
+    border: none;
+    background-color: black;
   }
   .tablet-section-b .div-4 {
     display: flex;
@@ -847,7 +861,7 @@ footer .social-media {
   }
 
   .section-3 .doctor-image {
-    height: 20rem;
+    height: 16rem;
   }
   .section-3 .doctor {
     display: grid;
@@ -868,7 +882,7 @@ footer .social-media {
     margin-bottom: 0;
   }
   .section-3 .doctor-name {
-    margin: 1rem 0;
+    margin: 1.1rem 0;
   }
   .section-3 .doctor-list {
     padding: 0 1rem;
