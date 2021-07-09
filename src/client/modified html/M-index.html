@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -99,56 +100,309 @@
               needs to be followed so that you get the services at its best
             </p>
           </div>
-          <ol>
+
+          <ol id="ol-mobile-view">
             <div class="section-3-grid">
               <div class="grid-1">
-                <li>
-                  <a href="#">
+                <li id="index1" onclick="showGrid('index1')">
+                  <a>
                     <h3 class="fix-consultation">
-                      <span>01</span> &nbsp; Fix Consultaion
+                      <span class="specialSpan" id="index1Span">01</span> &nbsp;
+                      Fix Consultaion
+                    </h3>
+                  </a>
+                </li>
+              </div>
+              <div id="index1img">
+                <div class="grid-3">
+                  <img src="../assets/images/img1.png" alt="img1-png" />
+                  <div class="grid-4">
+                    <h3>Fix Consultaion</h3>
+                    <p>
+                      This depicts that user will have to fix appointment first
+                      when it selects a particular doctor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-2">
+                <div>
+                  <li id="index2" onclick="showGrid('index2')">
+                    <a>
+                      <h3>
+                        <span id="index2Span">02</span> &nbsp; Upload Medical
+                        Reports
+                      </h3>
+                    </a>
+                  </li>
+                  <div class="inactive" id="index2img">
+                    <div class="grid-3">
+                      <img src="../assets/images/img6.jpg" alt="img6-jpg" />
+                      <div class="grid-4">
+                        <h3>Fix Consultaion</h3>
+                        <p>
+                          This depicts that user will have to fix appointment
+                          first when it selects a particular doctor.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <li id="index3" onclick="showGrid('index3')">
+                    <a>
+                      <h3>
+                        <span id="index3Span">03</span> &nbsp; Consult with
+                        doctor
+                      </h3>
+                    </a>
+                  </li>
+                  <div class="inactive" id="index3img">
+                    <div class="grid-3">
+                      <img src="../assets/images/img2.png" alt="img2-png" />
+                      <div class="grid-4">
+                        <h3>Fix Consultaion</h3>
+                        <p>
+                          This depicts that user will have to fix appointment
+                          first when it selects a particular doctor.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <li id="index4" onclick="showGrid('index4')">
+                    <a>
+                      <h3>
+                        <span id="index4Span">04</span> &nbsp; Fix Surgery
+                      </h3>
+                    </a>
+                  </li>
+                  <div class="inactive" id="index4img">
+                    <div class="grid-3">
+                      <img src="../assets/images/img7.jpeg" alt="img7-jpeg" />
+                      <div class="grid-4">
+                        <h3>Fix Consultaion</h3>
+                        <p>
+                          This depicts that user will have to fix appointment
+                          first when it selects a particular doctor.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <li id="index5" onclick="showGrid('index5')">
+                    <a>
+                      <h3>
+                        <span id="index5Span">05</span> &nbsp; Hospital sent
+                        estimates
+                      </h3>
+                    </a>
+                  </li>
+                  <div class="inactive" id="index5img">
+                    <div class="grid-3">
+                      <img src="../assets/images/img2.png" alt="img2-png" />
+                      <div class="grid-4">
+                        <h3>Fix Consultaion</h3>
+                        <p>
+                          This depicts that user will have to fix appointment
+                          first when it selects a particular doctor.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <li id="index6" onclick="showGrid('index6')">
+                    <a>
+                      <h3><span id="index6Span">06</span> &nbsp; Payment</h3>
+                    </a>
+                  </li>
+                  <div class="inactive" id="index6img">
+                    <div class="grid-3">
+                      <img src="../assets/images/img3.jpeg" alt="img3-jpeg" />
+                      <div class="grid-4">
+                        <h3>Fix Consultaion</h3>
+                        <p>
+                          This depicts that user will have to fix appointment
+                          first when it selects a particular doctor.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <li id="index7" onclick="showGrid('index7')">
+                    <a>
+                      <h3>
+                        <span id="index7Span">07</span> &nbsp; Surgery Completed
+                      </h3>
+                    </a>
+                  </li>
+                  <div class="inactive" id="index7img">
+                    <div class="grid-3">
+                      <img src="../assets/images/img4.jpeg" alt="img4-jpeg" />
+                      <div class="grid-4">
+                        <h3>Fix Consultaion</h3>
+                        <p>
+                          This depicts that user will have to fix appointment
+                          first when it selects a particular doctor.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ol>
+
+          <ol id="ol-tablet-view">
+            <div class="section-3-grid">
+              <div class="grid-1">
+                <li id="indexTablet1" onclick="showGridTablet('indexTablet1')">
+                  <a>
+                    <h3 class="fix-consultation">
+                      <span id="indexTablet1Span">01</span> &nbsp; Fix
+                      Consultaion
                     </h3>
                   </a>
                 </li>
               </div>
               <div class="grid-2">
                 <div>
-                  <li>
-                    <a href="#">
-                      <h3><span>02</span> &nbsp; Upload Medical Reports</h3>
+                  <li
+                    id="indexTablet2"
+                    onclick="showGridTablet('indexTablet2')"
+                  >
+                    <a>
+                      <h3>
+                        <span id="indexTablet2Span">02</span> &nbsp; Upload
+                        Medical Reports
+                      </h3>
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
-                      <h3><span>03</span> &nbsp; Consult with doctor</h3>
+                  <li
+                    id="indexTablet3"
+                    onclick="showGridTablet('indexTablet3')"
+                  >
+                    <a>
+                      <h3>
+                        <span id="indexTablet3Span">03</span> &nbsp; Consult
+                        with doctor
+                      </h3>
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
-                      <h3><span>04</span> &nbsp; Fix Surgery</h3>
+                  <li
+                    id="indexTablet4"
+                    onclick="showGridTablet('indexTablet4')"
+                  >
+                    <a>
+                      <h3>
+                        <span id="indexTablet4Span">04</span> &nbsp; Fix Surgery
+                      </h3>
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
-                      <h3><span>05</span> &nbsp; Hospital sent estimates</h3>
+                  <li
+                    id="indexTablet5"
+                    onclick="showGridTablet('indexTablet5')"
+                  >
+                    <a>
+                      <h3>
+                        <span id="indexTablet5Span">05</span> &nbsp; Hospital
+                        sent estimates
+                      </h3>
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
-                      <h3><span>06</span> &nbsp; Payment</h3>
+                  <li
+                    id="indexTablet6"
+                    onclick="showGridTablet('indexTablet6')"
+                  >
+                    <a>
+                      <h3>
+                        <span id="indexTablet6Span">06</span> &nbsp; Payment
+                      </h3>
                     </a>
                   </li>
-                  <li id="li-07">
-                    <a href="#">
-                      <h3><span>07</span> &nbsp; Surgery Completed</h3>
+                  <li
+                    id="indexTablet7"
+                    onclick="showGridTablet('indexTablet7')"
+                  >
+                    <a>
+                      <h3>
+                        <span id="indexTablet7Span">07</span> &nbsp; Surgery
+                        Completed
+                      </h3>
                     </a>
                   </li>
                 </div>
               </div>
-              <div class="grid-3">
-                <img src="../assets/images/img1.png" alt="img1-png" />
 
+              <div class="grid-3" id="indexTablet1Img">
+                <img src="../assets/images/img1.png" alt="img1-png" />
                 <div class="grid-4">
                   <h3>Fix Consultaion</h3>
+                  <p>
+                    This depicts that user will have to fix appointment first
+                    when it selects a particular doctor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid-3 inactiveTablet" id="indexTablet2Img">
+                <img src="../assets/images/img6.jpg" alt="img6-jpg" />
+                <div class="grid-4">
+                  <h3>Upload Medical Reports</h3>
+                  <p>
+                    This depicts that user will have to fix appointment first
+                    when it selects a particular doctor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid-3 inactiveTablet" id="indexTablet3Img">
+                <img src="../assets/images/img2.png" alt="img2-png" />
+                <div class="grid-4">
+                  <h3>Consult with doctor</h3>
+                  <p>
+                    This depicts that user will have to fix appointment first
+                    when it selects a particular doctor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid-3 inactiveTablet" id="indexTablet4Img">
+                <img src="../assets/images/img7.jpeg" alt="img7-jpeg" />
+                <div class="grid-4">
+                  <h3>Fix Surgery</h3>
+                  <p>
+                    This depicts that user will have to fix appointment first
+                    when it selects a particular doctor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid-3 inactiveTablet" id="indexTablet5Img">
+                <img src="../assets/images/img2.png" alt="img2-png" />
+                <div class="grid-4">
+                  <h3>Hospital sent estimates</h3>
+                  <p>
+                    This depicts that user will have to fix appointment first
+                    when it selects a particular doctor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid-3 inactiveTablet" id="indexTablet6Img">
+                <img src="../assets/images/img3.jpeg" alt="img3-jpeg" />
+                <div class="grid-4">
+                  <h3>Payment</h3>
+                  <p>
+                    This depicts that user will have to fix appointment first
+                    when it selects a particular doctor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid-3 inactiveTablet" id="indexTablet7Img">
+                <img src="../assets/images/img4.jpeg" alt="img4-jpeg" />
+                <div class="grid-4">
+                  <h3>Surgery Completed</h3>
                   <p>
                     This depicts that user will have to fix appointment first
                     when it selects a particular doctor.
@@ -171,89 +425,347 @@
               Hospital. UT Southeastern is also a mecca of patients.
             </p>
           </div>
-          <div class="doctor-section">
-            <div class="doctor">
-              <div class="doctor-img">
-                <img
-                  src="../assets/images/image--002.jpg"
-                  alt="duke-sanson-img"
-                />
+
+          <div id="mainCrousel">
+            <div class="doctor-section" id="crousel1">
+              <div class="doctor">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--002.jpg"
+                    alt="duke-sanson-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Neuro Surgeon</li>
+                    <li>Chain Department of Neurological Surgery</li>
+                    <li>Australia</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
               </div>
-              <hr />
-              <div class="doctor-info">
-                <h3>Duke Sanson</h3>
-                <ul>
-                  <li>Neuro Surgeon</li>
-                  <li>Chain Department of Neurological Surgery</li>
-                  <li>Australia</li>
-                </ul>
+
+              <div class="doctor georgea-peter">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--002.jpg"
+                    alt="georgea-peter-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Breast Cancer Surgeon</li>
+                    <li>Director UT. Southwest</li>
+                    <li>London</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
               </div>
-              <div class="bottom-line"></div>
+
+              <div class="doctor">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--002.jpg"
+                    alt="charlie-moon-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Cardiac Surgeon</li>
+                    <li>MBBS. MD. FRCP. MRCP. Fellowship</li>
+                    <li>New Delhi, India</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
+              </div>
+
+              <div class="doctor">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--002.jpg"
+                    alt="rose-moon-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Plastic Surgeon</li>
+                    <li>Department of Plastic and Reconstructive Surgery</li>
+                    <li>Dubai</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
+              </div>
             </div>
 
-            <div class="doctor georgea-peter">
-              <div class="doctor-img">
-                <img
-                  src="../assets/images/image--004.jpg"
-                  alt="georgea-peter-img"
-                />
+            <div class="doctor-section inactiveCrousel" id="crousel2">
+              <div class="doctor">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--004.jpg"
+                    alt="duke-sanson-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Neuro Surgeon</li>
+                    <li>Chain Department of Neurological Surgery</li>
+                    <li>Australia</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
               </div>
-              <hr />
-              <div class="doctor-info">
-                <h3>Duke Sanson</h3>
-                <ul>
-                  <li>Breast Cancer Surgeon</li>
-                  <li>Director UT. Southwest</li>
-                  <li>London</li>
-                </ul>
+
+              <div class="doctor georgea-peter">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--004.jpg"
+                    alt="georgea-peter-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Breast Cancer Surgeon</li>
+                    <li>Director UT. Southwest</li>
+                    <li>London</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
               </div>
-              <div class="bottom-line"></div>
+
+              <div class="doctor">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--004.jpg"
+                    alt="charlie-moon-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Cardiac Surgeon</li>
+                    <li>MBBS. MD. FRCP. MRCP. Fellowship</li>
+                    <li>New Delhi, India</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
+              </div>
+
+              <div class="doctor">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--004.jpg"
+                    alt="rose-moon-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Plastic Surgeon</li>
+                    <li>Department of Plastic and Reconstructive Surgery</li>
+                    <li>Dubai</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
+              </div>
             </div>
 
-            <div class="doctor">
-              <div class="doctor-img">
-                <img
-                  src="../assets/images/image--005.jpg"
-                  alt="charlie-moon-img"
-                />
+            <div class="doctor-section inactiveCrousel" id="crousel3">
+              <div class="doctor">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--005.jpg"
+                    alt="duke-sanson-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Neuro Surgeon</li>
+                    <li>Chain Department of Neurological Surgery</li>
+                    <li>Australia</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
               </div>
-              <hr />
-              <div class="doctor-info">
-                <h3>Duke Sanson</h3>
-                <ul>
-                  <li>Cardiac Surgeon</li>
-                  <li>MBBS. MD. FRCP. MRCP. Fellowship</li>
-                  <li>New Delhi, India</li>
-                </ul>
+
+              <div class="doctor georgea-peter">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--005.jpg"
+                    alt="georgea-peter-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Breast Cancer Surgeon</li>
+                    <li>Director UT. Southwest</li>
+                    <li>London</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
               </div>
-              <div class="bottom-line"></div>
+
+              <div class="doctor">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--005.jpg"
+                    alt="charlie-moon-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Cardiac Surgeon</li>
+                    <li>MBBS. MD. FRCP. MRCP. Fellowship</li>
+                    <li>New Delhi, India</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
+              </div>
+
+              <div class="doctor">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--005.jpg"
+                    alt="rose-moon-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Plastic Surgeon</li>
+                    <li>Department of Plastic and Reconstructive Surgery</li>
+                    <li>Dubai</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
+              </div>
             </div>
 
-            <div class="doctor">
-              <div class="doctor-img">
-                <img
-                  src="../assets/images/image--003.jpg"
-                  alt="rose-moon-img"
-                />
+            <div class="doctor-section inactiveCrousel" id="crousel4">
+              <div class="doctor">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--003.jpg"
+                    alt="duke-sanson-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Neuro Surgeon</li>
+                    <li>Chain Department of Neurological Surgery</li>
+                    <li>Australia</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
               </div>
-              <hr />
-              <div class="doctor-info">
-                <h3>Duke Sanson</h3>
-                <ul>
-                  <li>Plastic Surgeon</li>
-                  <li>Department of Plastic and Reconstructive Surgery</li>
-                  <li>Dubai</li>
-                </ul>
+
+              <div class="doctor georgea-peter">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--003.jpg"
+                    alt="georgea-peter-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Breast Cancer Surgeon</li>
+                    <li>Director UT. Southwest</li>
+                    <li>London</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
               </div>
-              <div class="bottom-line"></div>
+
+              <div class="doctor">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--003.jpg"
+                    alt="charlie-moon-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Cardiac Surgeon</li>
+                    <li>MBBS. MD. FRCP. MRCP. Fellowship</li>
+                    <li>New Delhi, India</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
+              </div>
+
+              <div class="doctor">
+                <div class="doctor-img">
+                  <img
+                    src="../assets/images/image--003.jpg"
+                    alt="rose-moon-img"
+                  />
+                </div>
+                <hr />
+                <div class="doctor-info">
+                  <h3>Duke Sanson</h3>
+                  <ul>
+                    <li>Plastic Surgeon</li>
+                    <li>Department of Plastic and Reconstructive Surgery</li>
+                    <li>Dubai</li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
+              </div>
             </div>
           </div>
-          <div class="slider"></div>
+
+          <!-- <div class="slider"></div> -->
           <div class="crousel">
-            <div class="crousel-radio-button"><input type="radio" /></div>
-            <div class="crousel-radio-button"><input type="radio" /></div>
-            <div class="crousel-radio-button"><input type="radio" /></div>
-            <div class="crousel-radio-button"><input type="radio" /></div>
+            <div
+              class="crousel-radio-button"
+              onclick="indexCrousel('crousel1')"
+            >
+              <input type="radio" name="option" checked id="option1" />
+            </div>
+            <div
+              class="crousel-radio-button"
+              onclick="indexCrousel('crousel2')"
+            >
+              <input type="radio" name="option" id="option2" />
+            </div>
+            <div
+              class="crousel-radio-button"
+              onclick="indexCrousel('crousel3')"
+            >
+              <input type="radio" name="option" id="option3" />
+            </div>
+            <div
+              class="crousel-radio-button"
+              onclick="indexCrousel('crousel4')"
+            >
+              <input type="radio" name="option" id="option4" />
+            </div>
           </div>
         </section>
         <!-- SECTIION-4 END -->
@@ -419,5 +931,6 @@
         <div id="footer-base-line"></div>
       </div>
     </div>
+    <script src="../javascript/dynamic.js"></script>
   </body>
 </html>

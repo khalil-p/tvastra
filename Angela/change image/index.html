@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="product">
+      <div class="main-img">
+        <img src="img/headphone_blue.png" class="pro-img" alt="product" />
+      </div>
+      <h1 class="title" style="text-align: center">BLUE</h1>
+      <div class="thumb-img">
+        <div class="box active" onclick="changeImage(this)">
+          <img src="img/headphone_blue.png" alt="thumb" />
+        </div>
+        <div class="box" onclick="changeImage(this)">
+          <img src="img/headphone_pink.png" alt="thumb" />
+        </div>
+        <div class="box" onclick="changeImage(this)">
+          <img src="img/headphone_red.png" alt="thumb" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const thumbs = document.querySelector(".thumb-img").children;
+
+      function changeImage(event) {
+        document.querySelector(".pro-img").src = event.children[0].src;
+
+        for (let i = 0; i < thumbs.length; i++) {
+          thumbs[i].classList.remove("active");
+          if (i === 1) {
+            document.querySelector("h1").textContent = "pink";
+          } else if (i === 2) {
+            document.querySelector("h1").innerHTML = "red";
+          } else {
+            document.querySelector("h1").innerHTML = "blue";
+          }
+        }
+        event.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

@@ -1,3 +1,7 @@
+.inactive {
+  display: none;
+}
+
 /* SECTION-1 START */
 .section-1 .menu-bar {
   display: none;
@@ -74,6 +78,7 @@
 }
 .section-3 .div-3-6 {
   display: flex;
+  cursor: pointer;
 }
 .section-3 .div-3-5 h3 {
   color: var(--enquiryButtonColor);
