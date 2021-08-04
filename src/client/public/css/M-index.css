@@ -207,6 +207,7 @@
   width: 3.5rem;
   position: absolute;
   align-self: left;
+  margin-top: 8px;
 }
 
 .doctor-info {
@@ -360,7 +361,13 @@ footer .social-media {
   margin-bottom: 1rem;
 }
 /* FOOTER END */
-
+@media (max-width: 768px) {
+  #crousel2,
+  #crousel3,
+  #crousel4 {
+    display: none;
+  }
+}
 @media (max-width: 415px) {
   /* SECTION-3 START */
   .section-3-grid .grid-3 img {
@@ -542,6 +549,11 @@ footer .social-media {
   /* SECTION-3 END */
 
   /* SECTION-4 START */
+  #crousel2,
+  #crousel3,
+  #crousel4 {
+    display: none;
+  }
   .section-4 .doctor {
     height: 44rem;
   }
@@ -895,12 +907,12 @@ footer .social-media {
 
   /* SECTION-4 START */
 
-  #crousel1,
+  /* #crousel1,
   #crousel2,
   #crousel3,
   #crousel4 {
-    animation: 1s ease;
-  }
+    transition: transform 250ms ease-in;
+  } */
   .section-4 .section-4-text {
     text-align: left;
   }
@@ -1117,4 +1129,7 @@ footer .social-media {
     background-color: var(--main-backgroundColor);
   }
   /* FOOTER END */
+  .transition {
+    transition: all 0.3s ease-in-out;
+  }
 }

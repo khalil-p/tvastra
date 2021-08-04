@@ -49,14 +49,13 @@ function showGridTablet(id) {
 // FOR INDEX PAGE CROUSEL
 function indexCrousel(id) {
   for (let i = 1; i <= 4; i++) {
-    // document.getElementById("crousel" + i).classList.remove("activeCrousel");
-    // document.getElementById("crousel" + i).classList.add("inactiveCrousel");
     document.getElementById("crousel" + i).style.display = "none";
   }
 
   var element = document.getElementById(id);
   if (element.style.display != "grid") {
     element.style.display = "grid";
+    element.classList.add("transition");
   } else {
     element.style.display = "none";
   }

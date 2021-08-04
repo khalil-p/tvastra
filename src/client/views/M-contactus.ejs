@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="../assets/css/reset.css" />
-    <link rel="stylesheet" href="../assets/css/theme.css" />
-    <link rel="stylesheet" href="../assets/css/contactus.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/M-theme.css" />
+    <link rel="stylesheet" href="css/M-contactus.css" />
     <title>contactus</title>
   </head>
+
   <body>
+    <!-- SECTION-1 START -->
     <section class="section-1">
-      <nav class="mobile-nav">
-        <img src="../assets/images/Logo.jpg" alt="logo-img" />
-        <div class="toggle-icon">
-          <i class="fas fa-bars fa-2x"></i>
-        </div>
-      </nav>
-      <nav class="desktop-nav">
-        <div class="navbar-logo">
-          <img src="../assets/images/Logo.jpg" alt="logo-jpg" />
-        </div>
+      <nav class="navbar">
+        <img class="navbar-logo" src=" Logo.jpg" alt="logo-jpg" />
+
         <div class="menu-bar">
           <ul>
-            <li><a href="#">Doctors</a></li>
-            <li><a href="#">Hospitals</a></li>
-            <li><a href="#">Treatment</a></li>
+            <li><a href="../modified html/M-doctor.html">Doctors</a></li>
+            <li><a href="../modified html/M-hospital.html">Hospitals</a></li>
+            <li><a href="../modified html/M-dentistry.html">Treatment</a></li>
             <li><a href="#">Other Services</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="../modified html/M-aboutus.html">About</a></li>
           </ul>
           <div class="menu-buttons">
             <button class="login-button">Login / Sign Up</button>
             <button>Get a Quote</button>
           </div>
         </div>
+        <div class="menu-toggle"><i class="fas fa-bars fa-2x"></i></div>
       </nav>
     </section>
+    <!-- SECTION-1 END -->
+
     <section class="section-2">
       <div>
-        <img src="../assets/css/../images/contactUs.png" alt="contactus-jpg" />
+        <img src=" contactUs.png" alt="contactus-jpg" />
       </div>
       <div class="text-overlay">
         <h1>Contact Us</h1>
         <p>Home / Contact Us</p>
       </div>
     </section>
-    
-      <section class="section-3">
-        <div id="map"></div>
-      </section>
-      <div class="desktop-view-1">
+
+    <section class="section-3">
+      <div id="map"></div>
+    </section>
+    <div class="desktop-view-1">
       <section id="section-4">
         <div class="contact-info div-1">
           <div class="icon">
@@ -103,47 +107,42 @@
       </section>
     </div>
     <section class="hr-section">
-      <hr>
+      <hr />
     </section>
+
+    <!-- FOOTER START -->
     <footer>
-      <div class="div-2">
-        <img src="../assets/images/footer.png" alt="footer-logo" />
+      <div class="footer-logo">
+        <img src=" footer.png" alt="footer-logo-img" />
         <ul>
-          <li>
-            <a href="#">Doctors</a>
+          <li class="footer-doctor-li">
+            <a href="../modified html/M-doctor.html">Doctor</a>
           </li>
+          <li><a href="../modified html/M-hospital.html">Hospital</a></li>
+          <li><a href="../modified html/M-dentistry.html">Treatment</a></li>
           <li>
-            <a href="#">Hospitals</a>
+            <a class="other-services-a" href="#services">Other Services</a>
           </li>
-          <li>
-            <a href="#">Treatment</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
-          </li>
-          <li>
-            <a href="#">FAQs</a>
-          </li>
+          <li><a href="#">FAQs</a></li>
         </ul>
       </div>
-      <div class="div-3">
-        <div class="social-div">
-          <div class="social-icons"><i class="fab fa-facebook-f"></i></div>
-          <div class="social-icons"><i class="fab fa-pinterest-p"></i></div>
-          <div class="social-icons"><i class="fab fa-twitter"></i></div>
-          <div class="social-icons"><i class="fab fa-google-plus-g"></i></div>
-          <div class="social-icons"><i class="fab fa-instagram"></i></div>
+      <div class="footer-social-media">
+        <div class="social-media">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-instagram"></i>
         </div>
-        <div class="copy-right">
-          <span>All Rights Reserved &#169; tvastra 2020</span>
-        </div>
+        <p>All Rights Reserved. © tvastra 2018</p>
       </div>
     </footer>
-    <div class="bottom-div"></div>
+    <!-- FOOTER END -->
+    <div id="footer-base-line"></div>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApGxsEyjk3HlPkfhgw4lJnnpaTBQDTWlI&callback=initMap&libraries=&v=weekly"
       async
     ></script>
-    <script src="../assets/scripts/map.js"></script>
+    <script src="assets/scripts/map.js"></script>
   </body>
 </html>
